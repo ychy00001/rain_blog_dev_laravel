@@ -4,7 +4,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        VueExample组件
+                        Test组件
                     </div>
                 </div>
             </div>
