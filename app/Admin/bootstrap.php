@@ -17,5 +17,10 @@
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+use App\Admin\Extensions\Simplemde;
+use Encore\Admin\Form;
 
-Encore\Admin\Form::forget(['map', 'editor']);
+//注册markdown editor
+Form::extend('editor', Simplemde::class);
+
+Encore\Admin\Form::forget(['map']);

@@ -4131,7 +4131,6 @@ window.Vue = __webpack_require__(2);
 
 
 
-// import router from './router.js'
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_element_ui___default.a);
 
