@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.5.39 on 2018-03-26 10:44:10.
+ * Generated for Laravel 5.5.39 on 2018-04-14 08:15:12.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -12279,6 +12279,38 @@ namespace Illuminate\Support\Facades {
  
 }
 
+namespace YuanChao\Editor\Facade { 
+
+    class EndaEditorFacade {
+        
+        /**
+         * EndaEditor Upload ImgFile
+         *
+         * @param string $path
+         * @return array 
+         * @static 
+         */ 
+        public static function uploadImgFile($path)
+        {
+            return \YuanChao\Editor\EndaEditor::uploadImgFile($path);
+        }
+        
+        /**
+         * 转换 mark 文本
+         *
+         * @param $markdownText
+         * @return string 
+         * @static 
+         */ 
+        public static function MarkDecode($markdownText)
+        {
+            return \YuanChao\Editor\EndaEditor::MarkDecode($markdownText);
+        }
+         
+    }
+ 
+}
+
 namespace Encore\Admin\Facades { 
 
     class Admin {
@@ -14603,6 +14635,8 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class EndaEditor extends \YuanChao\Editor\Facade\EndaEditorFacade {}
 
     class Admin extends \Encore\Admin\Facades\Admin {}
  
