@@ -18,9 +18,10 @@
  *
  */
 use App\Admin\Extensions\Simplemde;
+use App\Admin\Extensions\MarkDown;
 use Encore\Admin\Form;
 
 //注册markdown editor
-Form::extend('editor', Simplemde::class);
+Form::extend('editor', MarkDown::class);
 
 Encore\Admin\Form::forget(['map']);

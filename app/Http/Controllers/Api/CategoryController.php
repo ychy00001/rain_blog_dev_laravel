@@ -10,20 +10,25 @@ use Psy\Util\Json;
 class CategoryController extends Controller
 {
     /**
-     * Desc: 分页获取所有的分类
-     * User: ycy
-     * AddTime: 2018/3/19 上午11:50
-     * @param $request
+     * 分页获取所有的分类
+     *
+     * @author Rain
+     * @date   2018/4/14 上午11:26
+     *
+     * @param Request $request
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
     public function categoriesWithPaginate(Request $request){
-        return Category::paginate(null, ['id', 'class_name as text' ,'order']);
+        return with(Category::class)->paginate(null, ['id', 'class_name as text' ,'order']);
     }
 
     /**
-     * Desc: 获取所有的分类
-     * User: ycy
-     * AddTime: 2018/3/19 上午11:50
-     * @param $request
+     * 获取所有的分类
+     *
+     * @author Rain
+     * @date   2018/4/14 上午11:27
+     *
+     * @param Request $request
      * @return array
      */
     public function categories(Request $request){
