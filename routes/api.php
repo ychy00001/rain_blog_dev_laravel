@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/categories','Api\CategoryController@categories');
 Route::post('/upload/image','Api\UploadController@uploadImg');
+Route::get('/tools/format-img-curve','Api\ToolsController@formatImgCurveForPoint');

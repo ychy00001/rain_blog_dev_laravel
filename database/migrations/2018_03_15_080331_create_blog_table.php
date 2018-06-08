@@ -31,6 +31,7 @@ class CreateBlogTable extends Migration
         Schema::create('article', function (Blueprint $table) {
             $table->increments('id')->comment('文章id');
             $table->integer('category_id')->nullable()->comment('分类id');
+            $table->integer('user_id')->default(0)->comment('用户id');
             $table->string('title',255)->comment('标题名');
             $table->string('subtitle',255)->nullable()->comment('副标题名');
             $table->string('cover',1024)->nullable()->comment('封面图片');
