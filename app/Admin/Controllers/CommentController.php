@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Models\Article;
 use App\Models\Comment;
 
 use Encore\Admin\Form;
@@ -81,9 +82,12 @@ class CommentController extends Controller
         return Admin::grid(Comment::class, function (Grid $grid) {
 
             $grid->id('ID')->sortable();
+            $grid->column('article_id','文章编号')->sortable();
+            $grid->pid('父编号')->sortable();
+            $grid->content('内容')->sortable();
 
-            $grid->created_at();
-            $grid->updated_at();
+            $grid->updated_at('更新时间');
+            $grid->release_at('发布时间');
         });
     }
 
@@ -96,10 +100,23 @@ class CommentController extends Controller
     {
         return Admin::form(Comment::class, function (Form $form) {
 
+            //初始化分类数据
+            $articles = Article::all()->pluck('title','id');
+            $defaultSelect = [0=>"无"];
+            $comments = Comment::all()->pluck('content','id')->toArray();
+            $comments = array_merge($defaultSelect,$comments);
+            foreach ($comments as $key => $comment){
+                if(isset($comments['content']) && strlen($comment['content']) > 10){
+                    $comments[$key]['content'] = substr($comment['content'],0,10)."...";
+                }
+            }
             $form->display('id', 'ID');
+            $form->select('article_id', '文章')->options($articles)->rules('required', ['required'=> '评论文章不能为空']);
+            $form->select('pid', '上一级评论')->config('val',0)->options($comments);
+            $form->editor('content', '文章内容')->rules('required', ['required' => '内容不能为空!']);
 
-            $form->display('created_at', 'Created At');
-            $form->display('updated_at', 'Updated At');
+            $form->display('created_at', '创建时间');
+            $form->display('updated_at', '修改时间');
         });
     }
 }

@@ -81,9 +81,11 @@ class CategoryController extends Controller
         return Admin::grid(Category::class, function (Grid $grid) {
 
             $grid->id('ID')->sortable();
+            $grid->column('class_name','名称')->sortable();
+            $grid->order('排序')->sortable();
 
-            $grid->created_at();
-            $grid->updated_at();
+            $grid->updated_at('更新时间');
+            $grid->release_at('发布时间');
         });
     }
 
@@ -98,8 +100,11 @@ class CategoryController extends Controller
 
             $form->display('id', 'ID');
 
-            $form->display('created_at', 'Created At');
-            $form->display('updated_at', 'Updated At');
+            $form->text('class_name', '名称')->rules('required|max:10',['required' => '内容不能为空，并且不能小于5个字符!','max'=>'名称不能超过10个字符!']);
+            $form->text('order', '排序')->default(1)->rules('min:1|max:99');
+
+            $form->display('created_at', '创建时间');
+            $form->display('updated_at', '修改时间');
         });
     }
 }
