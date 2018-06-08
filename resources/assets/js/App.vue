@@ -1,7 +1,6 @@
 <template>
     <div>
         <router-view></router-view>
-        <div>我是App</div>
     </div>
 </template>
 <script scoped>

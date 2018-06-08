@@ -6,9 +6,14 @@ export default new VueRouter({
     saveScrollPosition: true,
     routes: [
         {
-            name: 'hello',
-            path: '/hello',
-            component: resolve => void(require(['../components/ExampleComponent.vue'], resolve))
+            name: 'index',
+            path: '/',
+            component: resolve => void(require(['../components/IndexComponent.vue'], resolve))
+        },
+        {
+            name: 'index',
+            path: '/index',
+            component: resolve => void(require(['../components/IndexComponent.vue'], resolve))
         }
     ]
 });

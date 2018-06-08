@@ -4,7 +4,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        VueExample组件
+                        Index
                     </div>
                 </div>
             </div>
@@ -15,7 +15,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+            console.log('index页面挂载!.')
         }
     }
 </script>
