@@ -16,5 +16,6 @@ Route::group([
     $router->resource('category', CategoryController::class);
     $router->resource('comment', CommentController::class);
     $router->resource('links', LinksController::class);
+    $router->resource('menu', MenuController::class);
 });
 

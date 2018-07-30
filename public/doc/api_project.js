@@ -1,0 +1,1 @@
+define({  "name": "远方小镇API",  "version": "0.1.0",  "description": "博客接口文档",  "title": "远方小镇API",  "url": "http://ychy666.com/api",  "sampleUrl": false,  "defaultVersion": "0.0.0",  "apidoc": "0.3.0",  "generator": {    "name": "apidoc",    "time": "2018-07-30T08:53:24.434Z",    "url": "http://apidocjs.com",    "version": "0.17.6"  }});
