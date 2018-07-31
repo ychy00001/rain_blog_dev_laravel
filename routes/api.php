@@ -25,6 +25,10 @@ Route::prefix('menu')->group(function () {
     Route::get('list', 'Api\MenuController@menuList');
 });
 
+Route::prefix('banner')->group(function () {
+    Route::get('list', 'Api\BannerController@bannerList');
+});
+
 Route::prefix('upload')->group(function () {
     Route::get('image', 'Api\UploadController@uploadImg');
 });

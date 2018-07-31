@@ -17,5 +17,6 @@ Route::group([
     $router->resource('comment', CommentController::class);
     $router->resource('links', LinksController::class);
     $router->resource('menu', MenuController::class);
+    $router->resource('banner', BannerController::class);
 });
 
