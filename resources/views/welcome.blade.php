@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="boxed" lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}">
     <head>
         <title>远方小镇</title>
         <meta charset="utf-8">
@@ -12,7 +12,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body class="bg12">
+    <body>
         <div id="preloader"></div>
         <div id="app">
         </div>

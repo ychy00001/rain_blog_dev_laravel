@@ -142,7 +142,7 @@ strong {
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;

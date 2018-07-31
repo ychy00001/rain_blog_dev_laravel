@@ -74496,7 +74496,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, ".tb {\r\n    display: table;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative;\r\n}\r\n\r\n.tb-cell {\r\n    display: table-cell;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n    height: 100%;\r\n}\r\n\r\n#preloader {\r\n    position: fixed;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #fff;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 99999;\r\n    background-image: url(/custom_resources/img/house_loader.gif);\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n}\r\n\r\nh1 {\r\n    font-size: 52px;\r\n    line-height: 62px;\r\n}\r\n\r\nh2 {\r\n    font-size: 36px;\r\n    line-height: 46px;\r\n}\r\n\r\nh3 {\r\n    font-size: 26px;\r\n    line-height: 36px;\r\n}\r\n\r\nh4 {\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n}\r\n\r\nh5 {\r\n    font-size: 18px;\r\n    line-height: 28px;\r\n}\r\n\r\nh6 {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n}\r\n\r\nh1,h2,h3,h4,h5,h6 {\r\n    margin-bottom: 20px;\r\n    font-weight: 700;\r\n    color: #292929;\r\n}\r\n\r\n.space {\r\n    padding-left: 40px!important;\r\n}\r\n\r\n.space-left {\r\n    padding-right: 40px!important;\r\n}\r\n\r\n.rslides {\r\n    position: relative;\r\n    list-style: none;\r\n    overflow: hidden;\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n::-webkit-input-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n:-moz-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n::-moz-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n:-ms-input-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n.rslides li {\r\n    -webkit-backface-visibility: hidden;\r\n    position: absolute;\r\n    display: none;\r\n    width: 100%;\r\n    left: 0;\r\n    top: 0;\r\n}\r\n\r\n.rslides li:first-child {\r\n    position: relative;\r\n    display: block;\r\n    float: left;\r\n}\r\n\r\n.rslides img {\r\n    display: block;\r\n    height: auto;\r\n    float: left;\r\n    border: 0;\r\n}\r\n\r\nbutton,input,textarea {\r\n    font-family: inherit;\r\n}\r\n\r\nstrong {\r\n    font-weight: 700;\r\n}\r\n\r\n.light {\r\n    font-weight: 300;\r\n}\r\n\r\n.gap-1 {\r\n    padding: 130px 0;\r\n}\r\n\r\na {\r\n    color: inherit;\r\n    text-decoration: none;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\na:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\na:active,a:focus,a:hover {\r\n    outline: 0;\r\n}\r\n\r\nbutton::-moz-focus-inner {\r\n    border: 0;\r\n}\r\n\r\n.section {\r\n    background-size: cover;\r\n}\r\n\r\n.parallax {\r\n    background-attachment: fixed;\r\n}\r\n\r\n* {\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.push-left {\r\n    float: left;\r\n}\r\n\r\n.push-right {\r\n    float: right;\r\n}\r\n\r\nbody {\r\n    font-size: 16px;\r\n    line-height: 30px;\r\n    letter-spacing: 1px;\r\n    color: #787878;\r\n    background-color: #eee;\r\n    font-family: 'Playfair Display',serif;\r\n}\r\n\r\n#page-container,.post>footer>div {\r\n    background-color: #fff;\r\n}\r\n\r\np {\r\n    margin-bottom: 15px;\r\n}\r\n\r\n.text-left {\r\n    text-align: left;\r\n}\r\n\r\n.text-center {\r\n    text-align: center;\r\n}\r\n\r\n.text-right {\r\n    text-align: right;\r\n}\r\n\r\nblockquote {\r\n    color: #969696;\r\n    font-style: italic;\r\n    border-left: 4px solid #ff9b9b;\r\n    padding-left: 30px;\r\n    margin: 25px 0;\r\n}\r\n\r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.clearfix:after,.clearfix:before {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n\r\n.clearfix:after {\r\n    clear: both;\r\n}\r\n\r\n.clearfix {\r\n    *zoom: 1;\r\n}\r\n\r\n#home {\r\n    width: 100%;\r\n    z-index: 900;\r\n    background-color: #fff;\r\n}\r\n\r\n#home-sticky-wrapper,#menu-container-sticky-wrapper {\r\n    height: 130px!important;\r\n}\r\n\r\n.header-style-3 #menu-container-sticky-wrapper {\r\n    height: 60px!important;\r\n}\r\n\r\n#home * {\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#section-featured {\r\n    position: relative;\r\n    min-height: 50px;\r\n}\r\n\r\n#section-featured #next-owl,#section-featured #prev-owl {\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    top: 43%;\r\n    z-index: 3;\r\n    text-align: center;\r\n    font-size: 12px;\r\n    color: #292929;\r\n    line-height: 45px;\r\n    cursor: pointer;\r\n}\r\n\r\n#section-featured #prev-owl {\r\n    left: 15px;\r\n}\r\n\r\n#section-featured #next-owl {\r\n    right: 15px;\r\n}\r\n\r\n#featured div img {\r\n    width: 100%;\r\n}\r\n\r\n#featured div span {\r\n    font-size: 14px;\r\n    color: #292929;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    bottom: -100%;\r\n    left: 0;\r\n    width: 100%;\r\n    padding: 15px;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#featured .owl-item:hover span {\r\n    bottom: 0;\r\n}\r\n\r\n#logo-container {\r\n    float: left;\r\n    height: 130px;\r\n    position: relative;\r\n}\r\n\r\n#logo-container img {\r\n    margin: auto;\r\n    transition: none!important;\r\n    -moz-transition: none!important;\r\n    -webkit-transition: none!important;\r\n}\r\n\r\n#logo-2 {\r\n    padding: 40px 0 0;\r\n    text-align: center;\r\n}\r\n\r\n#logo-2 img {\r\n    margin: auto;\r\n}\r\n\r\n#logo-3 {\r\n    padding: 40px 0 55px;\r\n    text-align: center;\r\n}\r\n\r\n#logo-3 img {\r\n    margin: auto;\r\n}\r\n\r\n#menu-container {\r\n    font-family: Alike,sans-serif;\r\n    color: #292929;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n}\r\n\r\n.header-style-2 .is-sticky #menu-container,.header-style-3 #menu-container,.is-sticky #home {\r\n    box-shadow: 0 0 2px #ccc;\r\n    -webkit-box-shadow: 0 0 2px #ccc;\r\n    -moz-box-shadow: 0 0 2px #ccc;\r\n}\r\n\r\n@media screen and (min-width:992px) {\r\n    .is-sticky #logo-container {\r\n        height: 60px;\r\n    }\r\n\r\n    .is-sticky #menu-container nav>ul>li>a {\r\n        height: 60px;\r\n        line-height: 68px;\r\n    }\r\n\r\n    .is-sticky #menu-container .sub-menu,.is-sticky #menu-container .ubermenu-submenu {\r\n        top: 60px;\r\n    }\r\n\r\n    .is-sticky #menu-container nav>ul>li {\r\n        margin-top: 0!important;\r\n    }\r\n\r\n    .header-style-2 #menu-container,.header-style-3 #menu-container {\r\n        float: none!important;\r\n        text-align: center;\r\n        width: 100%;\r\n        z-index: 9999;\r\n        background-color: #fff;\r\n        top: 0;\r\n        left: 0;\r\n    }\r\n\r\n    .header-style-2 #menu-container nav>ul>li,.header-style-3 #menu-container nav>ul>li {\r\n        display: inline-block;\r\n        float: none!important;\r\n    }\r\n\r\n    .header-style-3 #menu-container {\r\n        box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n    }\r\n\r\n    .header-style-3 nav>ul>li>a {\r\n        height: 60px!important;\r\n        line-height: 60px!important;\r\n    }\r\n\r\n    .header-style-3 .sub-menu,.header-style-3 .ubermenu-submenu {\r\n        top: 60px!important;\r\n    }\r\n\r\n    #menu-container {\r\n        display: block!important;\r\n        float: right;\r\n    }\r\n\r\n    #menu-container nav>ul>li {\r\n        float: left;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container nav>ul>li:hover>a {\r\n        color: #ff9b9b;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child a {\r\n        padding-right: 0!important;\r\n    }\r\n\r\n    #menu-container nav>ul>li>a {\r\n        display: block;\r\n        padding: 0 11px;\r\n        height: 130px;\r\n        line-height: 140px;\r\n    }\r\n\r\n    #menu-container nav>ul>li>a:after {\r\n        content: \"/\";\r\n        margin-left: 18px;\r\n        color: #292929!important;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child>a:after {\r\n        content: \"\";\r\n        margin-left: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu {\r\n        position: absolute;\r\n        width: 230px;\r\n        top: 130px;\r\n        left: 0;\r\n        padding: 18px 0;\r\n        z-index: 10;\r\n        line-height: 24px;\r\n        display: none;\r\n        background-color: #fff;\r\n        box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        text-align: left;\r\n    }\r\n\r\n    #menu-container .sub-menu li {\r\n        padding: 10px 18px;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container nav>ul>li>.ubermenu-submenu {\r\n        position: absolute;\r\n        width: 97%;\r\n        left: 0;\r\n        top: 130px;\r\n        z-index: 10;\r\n        background-color: #fff;\r\n        box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        display: none;\r\n        margin: 0 15px;\r\n        min-height: 220px;\r\n        text-align: left;\r\n    }\r\n\r\n    #menu-container nav>ul>li>.ubermenu-submenu>li {\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group {\r\n        width: 17%;\r\n        padding: 10px 0;\r\n        border-right: 1px solid #e4e4e4;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a {\r\n        display: block;\r\n        padding: 5px 30px 5px 20px;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a:after {\r\n        font-family: FontAwesome;\r\n        content: \"\\F105\";\r\n        color: #838383;\r\n        font-size: 17px;\r\n        display: inline-block;\r\n        position: absolute;\r\n        right: 20px;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li ul {\r\n        display: none;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group .ubermenu-active ul {\r\n        display: block;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel {\r\n        width: 83%;\r\n        position: absolute;\r\n        top: 0;\r\n        right: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li {\r\n        float: left;\r\n        padding: 30px 45px;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li:first-child {\r\n        padding-right: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li:last-child {\r\n        padding-left: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu .sub-menu {\r\n        left: 230px;\r\n        top: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu,#menu-container .ubermenu-submenu {\r\n        transition: none;\r\n        -moz-transition: none;\r\n        -webkit-transition: none;\r\n    }\r\n\r\n    #menu-container .current-menu-item>a,#menu-container .ubermenu-active>a {\r\n        color: #ff9b9b;\r\n    }\r\n}\r\n\r\n#mobile-button {\r\n    display: none;\r\n    position: absolute;\r\n    top: 25px;\r\n    right: 0;\r\n    background-color: #fff;\r\n    width: 50px;\r\n    height: 50px;\r\n    z-index: 3;\r\n    padding: 40px 0;\r\n    cursor: pointer;\r\n}\r\n\r\n#mobile-button hr {\r\n    width: 15px;\r\n    height: 2px;\r\n    background-color: #292929;\r\n    border: none;\r\n    margin: 0 auto 2px;\r\n}\r\n\r\n@media (max-width:991px) {\r\n    .sticky {\r\n        position: static!important;\r\n    }\r\n\r\n    .ubermenu-tab-content-panel {\r\n        padding: 20px 0 5px;\r\n    }\r\n\r\n    #menu-container .menu-open .ubermenu-submenu,#menu-container .menu-open>.sub-menu,.menu-open>.ubermenu-tab-content-panel {\r\n        display: block!important;\r\n    }\r\n\r\n    #logo-container {\r\n        position: relative;\r\n        width: 100%;\r\n    }\r\n\r\n    #logo-container .tb-cell {\r\n        text-align: left;\r\n    }\r\n\r\n    .header-style-3 #mobile-button {\r\n        left: 48%;\r\n        top: -20px;\r\n    }\r\n\r\n    .header-style-3 #menu-container nav {\r\n        margin-top: 40px;\r\n    }\r\n\r\n    #mobile-button {\r\n        display: block;\r\n    }\r\n\r\n    #logo-2 {\r\n        padding-bottom: 30px;\r\n    }\r\n\r\n    #menu-container {\r\n        clear: both;\r\n        display: none;\r\n        padding-bottom: 30px;\r\n    }\r\n\r\n    #menu-container .sub-menu,#menu-container .ubermenu-submenu {\r\n        display: none!important;\r\n    }\r\n\r\n    #menu-container nav>ul a {\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .arrow:after {\r\n        content: \"\\F107\";\r\n        font-family: FontAwesome;\r\n        font-size: 16px;\r\n        position: absolute;\r\n        top: 10px;\r\n        right: 0;\r\n    }\r\n\r\n    #menu-container .menu-open>.arrow:after {\r\n        content: \"\\F106\"!important;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a,#menu-container nav>ul>li>a {\r\n        padding: 10px 0;\r\n        border-bottom: 1px solid #E4E4E4;\r\n        display: block;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a {\r\n        border-bottom: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel {\r\n        display: none;\r\n    }\r\n\r\n    #menu-container nav>ul .sub-menu a {\r\n        padding: 15px 0 0;\r\n        display: block;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child>a {\r\n        border-bottom: 0;\r\n    }\r\n}\r\n\r\n#page {\r\n    padding: 90px 0 20px;\r\n}\r\n\r\n#header-section {\r\n    margin-bottom: 25px;\r\n}\r\n\r\n#header-section h3 {\r\n    margin-bottom: 0;\r\n}\r\n\r\n#header-section div {\r\n    width: 90px;\r\n    margin: 5px 0;\r\n    height: 5px;\r\n    background: #e4e4e4;\r\n}\r\n\r\n#header-section span {\r\n    font-size: 13px;\r\n    margin-top: -7px;\r\n    display: block;\r\n}\r\n\r\n.post {\r\n    margin-bottom: 60px;\r\n}\r\n\r\n.post>header {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.post>header h3 {\r\n    margin: 40px 0 10px!important;\r\n}\r\n\r\n.post>header span {\r\n    font-style: italic;\r\n    font-size: 13px;\r\n}\r\n\r\n.post>footer {\r\n    position: relative;\r\n    margin-top: 30px;\r\n}\r\n\r\n.post>footer div {\r\n    color: #ff9b9b;\r\n    font-size: 14px;\r\n    font-style: italic;\r\n    position: relative;\r\n    padding-right: 30px;\r\n    z-index: 3;\r\n    display: inline-block;\r\n}\r\n\r\n.post>footer div a:hover {\r\n    color: #292929;\r\n}\r\n\r\n.post>footer hr {\r\n    position: absolute;\r\n    top: 9px;\r\n    width: 100%;\r\n    height: 1px;\r\n    background-color: #e4e4e4;\r\n    border: none;\r\n}\r\n\r\n#page-content>header {\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.editor-styles ul {\r\n    margin: 30px 0 50px 15px;\r\n    list-style-type: disc;\r\n}\r\n\r\n.editor-styles ul li {\r\n    padding-left: 20px;\r\n}\r\n\r\n.editor-styles a {\r\n    color: #ff9b9b;\r\n}\r\n\r\n.alignleft {\r\n    float: left;\r\n    margin: 0 10px 10px 0;\r\n}\r\n\r\n.alignright {\r\n    float: right;\r\n    margin: 0 0 10px 10px;\r\n}\r\n\r\n#masonry-1 .post {\r\n    width: 48%;\r\n    margin: 0 1% 50px;\r\n    float: left;\r\n}\r\n\r\n#masonry-2 .post {\r\n    width: 31%;\r\n    margin: 0 1% 50px;\r\n    float: left;\r\n}\r\n\r\n#post-author {\r\n    position: relative;\r\n    padding-left: 140px;\r\n    min-height: 80px;\r\n    margin: 80px 0 70px;\r\n}\r\n\r\n#post-author img {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n}\r\n\r\n#post-nav {\r\n    text-align: right;\r\n    font-style: italic;\r\n    font-size: 14px;\r\n}\r\n\r\n#post-nav-2 {\r\n    padding-top: 25px;\r\n    border-top: 1px solid #e4e4e4;\r\n    margin-bottom: 50px;\r\n}\r\n\r\n#post-nav-2 a {\r\n    font-style: italic;\r\n    font-size: 14px;\r\n}\r\n\r\n#post-nav-2 .push-right {\r\n    text-align: right;\r\n}\r\n\r\n#comments h4 {\r\n    margin-bottom: 45px;\r\n}\r\n\r\n#comments #list-comments {\r\n    margin-bottom: 100px;\r\n}\r\n\r\n#comments #list-comments li {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#comments #list-comments li .comment-body {\r\n    background-color: #f1f0f0;\r\n    margin-left: 100px;\r\n    min-height: 90px;\r\n    padding: 25px 30px;\r\n}\r\n\r\n#comments #list-comments li .comment-body .fn {\r\n    color: #292929;\r\n    font-weight: 600;\r\n}\r\n\r\n#comments #list-comments li .comment-body img {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n}\r\n\r\n#comments #list-comments li .vcard {\r\n    margin-bottom: 15px;\r\n}\r\n\r\n#comments #list-comments li .comment-body:before {\r\n    content: \"\\F0D9\";\r\n    color: #f1f0f0;\r\n    font-family: FontAwesome;\r\n    position: absolute;\r\n    top: 25px;\r\n    left: 94px;\r\n    z-index: 3;\r\n    font-size: 20px;\r\n}\r\n\r\n#comments #list-comments li .commentmetadata {\r\n    font-style: italic;\r\n    font-size: 13px;\r\n}\r\n\r\n#comments #list-comments li .children li {\r\n    margin-top: 10px;\r\n}\r\n\r\n#comments #commentform button,#comments #commentform input,#comments #commentform textarea {\r\n    display: block;\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    font-size: 14px;\r\n    border: 1px solid #e4e4e4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    color: #787878;\r\n    background-color: #fff;\r\n}\r\n\r\n#comments #commentform input {\r\n    max-width: 280px;\r\n    width: 100%;\r\n}\r\n\r\n#comments #commentform textarea {\r\n    width: 100%;\r\n    max-width: 100%;\r\n    height: 175px;\r\n}\r\n\r\n#comments #commentform button {\r\n    padding: 10px 15px;\r\n    cursor: pointer;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#comments #commentform button:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\n.widget {\r\n    margin-bottom: 50px;\r\n    font-size: 14px;\r\n}\r\n\r\n.widget ul li {\r\n    padding: 15px 0;\r\n    border-bottom: 1px solid #e4e4e4;\r\n}\r\n\r\n.widget ul li:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.widget .search-form {\r\n    padding: 10px 20px;\r\n    border: 1px solid #E4E4E4;\r\n    position: relative;\r\n}\r\n\r\n.widget .search-form input {\r\n    border: none;\r\n    color: #787878;\r\n    width: 88%;\r\n    position: relative;\r\n    top: 1px;\r\n    font-size: 13px;\r\n    float: left;\r\n    letter-spacing: 1px;\r\n}\r\n\r\n.widget .search-form button {\r\n    float: right;\r\n    width: 12%;\r\n    border: none;\r\n    background: 0 0;\r\n    font-size: 13px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n    color: #787878;\r\n    cursor: pointer;\r\n}\r\n\r\n.tagcloud a {\r\n    font-size: 13px;\r\n    border: 1px solid #e4e4e4;\r\n    padding: 3px 7px;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    margin: 4px 4px 4px -3px;\r\n    display: inline-block;\r\n}\r\n\r\n#map-canvas img,.map-canvas img {\r\n    max-width: none!important;\r\n}\r\n\r\n.house-slideshow {\r\n    position: relative;\r\n}\r\n\r\n.house-slideshow .rslides_nav {\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    top: 40%;\r\n    z-index: 3;\r\n    text-align: center;\r\n    font-size: 12px;\r\n    color: #292929;\r\n    line-height: 45px;\r\n    cursor: pointer;\r\n}\r\n\r\n.house-slideshow .prev {\r\n    left: 15px;\r\n}\r\n\r\n.house-slideshow .next {\r\n    right: 15px;\r\n}\r\n\r\n.blockquote-1 {\r\n    padding: 40px 30px;\r\n    background-color: #E4E4E4;\r\n}\r\n\r\n.blockquote-1 blockquote {\r\n    border: none!important;\r\n    padding: 0!important;\r\n    font-size: 16px;\r\n    margin: 0;\r\n}\r\n\r\n.blockquote-1 span {\r\n    color: #292929;\r\n    font-size: 16px!important;\r\n    display: block;\r\n    margin-top: 10px;\r\n    font-style: normal!important;\r\n    font-weight: 700;\r\n}\r\n\r\n.link-1 {\r\n    background-color: #E4E4E4;\r\n    padding: 40px 30px;\r\n}\r\n\r\n.link-1 a {\r\n    font-size: 30px;\r\n    font-weight: 700;\r\n    color: #292929;\r\n}\r\n\r\n.social-1 {\r\n    display: inline-block;\r\n    width: 42px;\r\n    height: 42px;\r\n    line-height: 42px;\r\n    text-align: center;\r\n    font-size: 14px;\r\n    color: #828282;\r\n    background-color: #e4e4e4;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    margin: 0 0 2px 4px;\r\n}\r\n\r\n.social-1:hover {\r\n    color: #ff9b9b!important;\r\n}\r\n\r\n#contactform {\r\n    margin: 0 -15px;\r\n}\r\n\r\n#contactform #error-message,#contactform #success-message,#contactform .loading {\r\n    display: none;\r\n}\r\n\r\n.error {\r\n    border-color: #ff9b9b!important;\r\n}\r\n\r\n.form-1 button,.form-1 input,.form-1 textarea {\r\n    width: 100%;\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    font-size: 14px;\r\n    border: 1px solid #e4e4e4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    color: #787878;\r\n    background-color: #fff;\r\n}\r\n\r\n.form-1 textarea {\r\n    max-width: 100%;\r\n    height: 160px;\r\n}\r\n\r\n.form-1 button {\r\n    padding: 10px 15px;\r\n    cursor: pointer;\r\n    width: auto;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.form-1 button:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\n#map-canvas {\r\n    width: 100%;\r\n    height: 350px;\r\n}\r\n\r\n#foot-right {\r\n    text-align: right;\r\n    padding-top: 55px;\r\n}\r\n\r\n#foot-left p {\r\n    margin-top: 30px;\r\n}\r\n\r\n#footer-main {\r\n    padding: 25px 0;\r\n    background-color: #fff;\r\n}\r\n\r\n@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {\r\n    .parallax {\r\n        background-attachment: scroll!important;\r\n        background-position: center top!important;\r\n        background-size: cover!important;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width:991px) {\r\n    #home-sticky-wrapper,#menu-container-sticky-wrapper,.header-style-3 #menu-container-sticky-wrapper {\r\n        height: auto!important;\r\n    }\r\n\r\n    .sub-menu,.ubermenu-submenu {\r\n        display: block!important;\r\n    }\r\n\r\n    .space {\r\n        padding-left: 15px!important;\r\n    }\r\n\r\n    .space-left {\r\n        padding-right: 15px!important;\r\n    }\r\n\r\n    #post-nav {\r\n        margin-bottom: 20px;\r\n    }\r\n\r\n    .boxed #page-container {\r\n        width: 92%!important;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width:767px) {\r\n    .parallax {\r\n        background-attachment: scroll!important;\r\n        background-position: center top!important;\r\n        background-size: cover!important;\r\n    }\r\n\r\n    #masonry-1 .post,#masonry-2 .post {\r\n        width: 100%;\r\n        margin: 0 0 50px;\r\n        float: none;\r\n    }\r\n}\r\n\r\n@media (max-width:1024px) {\r\n    .boxed body {\r\n        background-attachment: scroll!important;\r\n    }\r\n}\r\n\r\n.boxed .header-style-2 #menu-container,.boxed .header-style-3 #menu-container {\r\n    left: auto!important;\r\n}\r\n\r\n.boxed #page-container {\r\n    max-width: 1060px;\r\n    margin: 50px auto;\r\n}\r\n\r\n.boxed .sticky {\r\n    max-width: 1060px;\r\n}\r\n\r\n.boxed #footer-main {\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.bg1 {\r\n    background-image: url(/custom_resources/img/bg/pat1.png);\r\n}\r\n\r\n.bg2 {\r\n    background-image: url(/custom_resources/img/bg/pat2.png);\r\n}\r\n\r\n.bg3 {\r\n    background-image: url(/custom_resources/img/bg/pat3.png);\r\n}\r\n\r\n.bg4 {\r\n    background-image: url(/custom_resources/img/bg/pat4.png);\r\n}\r\n\r\n.bg5 {\r\n    background-image: url(/custom_resources/img/bg/pat5.png);\r\n}\r\n\r\n.bg6 {\r\n    background-image: url(/custom_resources/img/bg/pat6.png);\r\n}\r\n\r\n.bg7 {\r\n    background-image: url(/custom_resources/img/bg/pat7.png);\r\n}\r\n\r\n.bg8 {\r\n    background-image: url(/custom_resources/img/bg/pat8.png);\r\n}\r\n\r\n.bg9 {\r\n    background-image: url(/custom_resources/img/bg/image1.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg10 {\r\n    background-image: url(/custom_resources/img/bg/image2.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg11 {\r\n    background-image: url(/custom_resources/img/bg/image3.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg12 {\r\n    background-image: url(/custom_resources/img/bg/image4.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n#style-switcher {\r\n    width: 230px;\r\n    position: fixed;\r\n    left: -230px;\r\n    top: 100px;\r\n    z-index: 10000;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n    background-color: #fff;\r\n    border: 1px solid #E4E4E4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    padding: 40px 30px;\r\n}\r\n\r\n#style-switcher header {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#style-switcher header hr {\r\n    width: 60px;\r\n    height: 5px;\r\n    background-color: #E4E4E4;\r\n    border: none;\r\n    margin: -10px 0 0;\r\n}\r\n\r\n#style-switcher h6 {\r\n    margin-bottom: 15px;\r\n    color: #454545;\r\n    font-size: 13px;\r\n    font-family: Alike,sans-serif;\r\n    font-weight: 300;\r\n}\r\n\r\n#style-switcher select {\r\n    width: 150px;\r\n}\r\n\r\n#style-switcher span {\r\n    display: block;\r\n    width: 50px;\r\n    height: 50px;\r\n    background: #fff;\r\n    position: absolute;\r\n    right: -49px;\r\n    top: 58px;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    color: #292929;\r\n    border-top: 1px solid #E4E4E4;\r\n    border-right: 1px solid #E4E4E4;\r\n    border-bottom: 1px solid #E4E4E4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    cursor: pointer;\r\n}\r\n\r\n#style-switcher div {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#style-switcher img {\r\n    cursor: pointer;\r\n}\r\n\r\n#style-switcher.open {\r\n    left: 0;\r\n}\r\n\r\n@media (max-width:991px) {\r\n    #style-switcher {\r\n        display: none;\r\n    }\r\n}\r\n", ""]);
+exports.push([module.i, ".tb {\r\n    display: table;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: relative;\r\n}\r\n\r\n.tb-cell {\r\n    display: table-cell;\r\n    text-align: center;\r\n    vertical-align: middle;\r\n    height: 100%;\r\n}\r\n\r\n#preloader {\r\n    position: fixed;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #fff;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 99999;\r\n    background-image: url(/custom_resources/img/house_loader.gif);\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n}\r\n\r\nh1 {\r\n    font-size: 52px;\r\n    line-height: 62px;\r\n}\r\n\r\nh2 {\r\n    font-size: 36px;\r\n    line-height: 46px;\r\n}\r\n\r\nh3 {\r\n    font-size: 26px;\r\n    line-height: 36px;\r\n}\r\n\r\nh4 {\r\n    font-size: 22px;\r\n    line-height: 32px;\r\n}\r\n\r\nh5 {\r\n    font-size: 18px;\r\n    line-height: 28px;\r\n}\r\n\r\nh6 {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n}\r\n\r\nh1,h2,h3,h4,h5,h6 {\r\n    margin-bottom: 20px;\r\n    font-weight: 700;\r\n    color: #292929;\r\n}\r\n\r\n.space {\r\n    padding-left: 40px!important;\r\n}\r\n\r\n.space-left {\r\n    padding-right: 40px!important;\r\n}\r\n\r\n.rslides {\r\n    position: relative;\r\n    list-style: none;\r\n    overflow: hidden;\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n::-webkit-input-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n:-moz-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n::-moz-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n:-ms-input-placeholder {\r\n    opacity: 1!important;\r\n    -moz-opacity: 1!important;\r\n    -khtml-opacity: 1!important;\r\n}\r\n\r\n.rslides li {\r\n    -webkit-backface-visibility: hidden;\r\n    position: absolute;\r\n    display: none;\r\n    width: 100%;\r\n    left: 0;\r\n    top: 0;\r\n}\r\n\r\n.rslides li:first-child {\r\n    position: relative;\r\n    display: block;\r\n    float: left;\r\n}\r\n\r\n.rslides img {\r\n    display: block;\r\n    height: auto;\r\n    float: left;\r\n    border: 0;\r\n}\r\n\r\nbutton,input,textarea {\r\n    font-family: inherit;\r\n}\r\n\r\nstrong {\r\n    font-weight: 700;\r\n}\r\n\r\n.light {\r\n    font-weight: 300;\r\n}\r\n\r\n.gap-1 {\r\n    padding: 130px 0;\r\n}\r\n\r\na {\r\n    color: inherit;\r\n    text-decoration: none !important;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\na:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\na:active,a:focus,a:hover {\r\n    outline: 0;\r\n}\r\n\r\nbutton::-moz-focus-inner {\r\n    border: 0;\r\n}\r\n\r\n.section {\r\n    background-size: cover;\r\n}\r\n\r\n.parallax {\r\n    background-attachment: fixed;\r\n}\r\n\r\n* {\r\n    -webkit-box-sizing: border-box;\r\n    -moz-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n}\r\n\r\n.push-left {\r\n    float: left;\r\n}\r\n\r\n.push-right {\r\n    float: right;\r\n}\r\n\r\nbody {\r\n    font-size: 16px;\r\n    line-height: 30px;\r\n    letter-spacing: 1px;\r\n    color: #787878;\r\n    background-color: #eee;\r\n    font-family: 'Playfair Display',serif;\r\n}\r\n\r\n#page-container,.post>footer>div {\r\n    background-color: #fff;\r\n}\r\n\r\np {\r\n    margin-bottom: 15px;\r\n}\r\n\r\n.text-left {\r\n    text-align: left;\r\n}\r\n\r\n.text-center {\r\n    text-align: center;\r\n}\r\n\r\n.text-right {\r\n    text-align: right;\r\n}\r\n\r\nblockquote {\r\n    color: #969696;\r\n    font-style: italic;\r\n    border-left: 4px solid #ff9b9b;\r\n    padding-left: 30px;\r\n    margin: 25px 0;\r\n}\r\n\r\nimg {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.clearfix:after,.clearfix:before {\r\n    content: \" \";\r\n    display: table;\r\n}\r\n\r\n.clearfix:after {\r\n    clear: both;\r\n}\r\n\r\n.clearfix {\r\n    *zoom: 1;\r\n}\r\n\r\n#home {\r\n    width: 100%;\r\n    z-index: 900;\r\n    background-color: #fff;\r\n}\r\n\r\n#home-sticky-wrapper,#menu-container-sticky-wrapper {\r\n    height: 130px!important;\r\n}\r\n\r\n.header-style-3 #menu-container-sticky-wrapper {\r\n    height: 60px!important;\r\n}\r\n\r\n#home * {\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#section-featured {\r\n    position: relative;\r\n    min-height: 50px;\r\n}\r\n\r\n#section-featured #next-owl,#section-featured #prev-owl {\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    top: 43%;\r\n    z-index: 3;\r\n    text-align: center;\r\n    font-size: 12px;\r\n    color: #292929;\r\n    line-height: 45px;\r\n    cursor: pointer;\r\n}\r\n\r\n#section-featured #prev-owl {\r\n    left: 15px;\r\n}\r\n\r\n#section-featured #next-owl {\r\n    right: 15px;\r\n}\r\n\r\n#featured div img {\r\n    width: 100%;\r\n}\r\n\r\n#featured div span {\r\n    font-size: 14px;\r\n    color: #292929;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    bottom: -100%;\r\n    left: 0;\r\n    width: 100%;\r\n    padding: 15px;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#featured .owl-item:hover span {\r\n    bottom: 0;\r\n}\r\n\r\n#logo-container {\r\n    float: left;\r\n    height: 130px;\r\n    position: relative;\r\n}\r\n\r\n#logo-container img {\r\n    margin: auto;\r\n    transition: none!important;\r\n    -moz-transition: none!important;\r\n    -webkit-transition: none!important;\r\n}\r\n\r\n#logo-2 {\r\n    padding: 40px 0 0;\r\n    text-align: center;\r\n}\r\n\r\n#logo-2 img {\r\n    margin: auto;\r\n}\r\n\r\n#logo-3 {\r\n    padding: 40px 0 55px;\r\n    text-align: center;\r\n}\r\n\r\n#logo-3 img {\r\n    margin: auto;\r\n}\r\n\r\n#menu-container {\r\n    font-family: Alike,sans-serif;\r\n    color: #292929;\r\n    font-size: 14px;\r\n    letter-spacing: 2px;\r\n}\r\n\r\n.header-style-2 .is-sticky #menu-container,.header-style-3 #menu-container,.is-sticky #home {\r\n    box-shadow: 0 0 2px #ccc;\r\n    -webkit-box-shadow: 0 0 2px #ccc;\r\n    -moz-box-shadow: 0 0 2px #ccc;\r\n}\r\n\r\n@media screen and (min-width:992px) {\r\n    .is-sticky #logo-container {\r\n        height: 60px;\r\n    }\r\n\r\n    .is-sticky #menu-container nav>ul>li>a {\r\n        height: 60px;\r\n        line-height: 68px;\r\n    }\r\n\r\n    .is-sticky #menu-container .sub-menu,.is-sticky #menu-container .ubermenu-submenu {\r\n        top: 60px;\r\n    }\r\n\r\n    .is-sticky #menu-container nav>ul>li {\r\n        margin-top: 0!important;\r\n    }\r\n\r\n    .header-style-2 #menu-container,.header-style-3 #menu-container {\r\n        float: none!important;\r\n        text-align: center;\r\n        width: 100%;\r\n        z-index: 9999;\r\n        background-color: #fff;\r\n        top: 0;\r\n        left: 0;\r\n    }\r\n\r\n    .header-style-2 #menu-container nav>ul>li,.header-style-3 #menu-container nav>ul>li {\r\n        display: inline-block;\r\n        float: none!important;\r\n    }\r\n\r\n    .header-style-3 #menu-container {\r\n        box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n    }\r\n\r\n    .header-style-3 nav>ul>li>a {\r\n        height: 60px!important;\r\n        line-height: 60px!important;\r\n    }\r\n\r\n    .header-style-3 .sub-menu,.header-style-3 .ubermenu-submenu {\r\n        top: 60px!important;\r\n    }\r\n\r\n    #menu-container {\r\n        display: block!important;\r\n        float: right;\r\n    }\r\n\r\n    #menu-container nav>ul>li {\r\n        float: left;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container nav>ul>li:hover>a {\r\n        color: #ff9b9b;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child a {\r\n        padding-right: 0!important;\r\n    }\r\n\r\n    #menu-container nav>ul>li>a {\r\n        display: block;\r\n        padding: 0 11px;\r\n        height: 130px;\r\n        line-height: 140px;\r\n    }\r\n\r\n    #menu-container nav>ul>li>a:after {\r\n        content: \"/\";\r\n        margin-left: 18px;\r\n        color: #292929!important;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child>a:after {\r\n        content: \"\";\r\n        margin-left: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu {\r\n        position: absolute;\r\n        width: 230px;\r\n        top: 130px;\r\n        left: 0;\r\n        padding: 18px 0;\r\n        z-index: 10;\r\n        line-height: 24px;\r\n        display: none;\r\n        background-color: #fff;\r\n        box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        text-align: left;\r\n    }\r\n\r\n    #menu-container .sub-menu li {\r\n        padding: 10px 18px;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container nav>ul>li>.ubermenu-submenu {\r\n        position: absolute;\r\n        width: 97%;\r\n        left: 0;\r\n        top: 130px;\r\n        z-index: 10;\r\n        background-color: #fff;\r\n        box-shadow: 0 0 2px #ccc;\r\n        -moz-box-shadow: 0 0 2px #ccc;\r\n        -webkit-box-shadow: 0 0 2px #ccc;\r\n        display: none;\r\n        margin: 0 15px;\r\n        min-height: 220px;\r\n        text-align: left;\r\n    }\r\n\r\n    #menu-container nav>ul>li>.ubermenu-submenu>li {\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group {\r\n        width: 17%;\r\n        padding: 10px 0;\r\n        border-right: 1px solid #e4e4e4;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a {\r\n        display: block;\r\n        padding: 5px 30px 5px 20px;\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a:after {\r\n        font-family: FontAwesome;\r\n        content: \"\\F105\";\r\n        color: #838383;\r\n        font-size: 17px;\r\n        display: inline-block;\r\n        position: absolute;\r\n        right: 20px;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li ul {\r\n        display: none;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group .ubermenu-active ul {\r\n        display: block;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel {\r\n        width: 83%;\r\n        position: absolute;\r\n        top: 0;\r\n        right: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li {\r\n        float: left;\r\n        padding: 30px 45px;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li:first-child {\r\n        padding-right: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel li:last-child {\r\n        padding-left: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu .sub-menu {\r\n        left: 230px;\r\n        top: 0;\r\n    }\r\n\r\n    #menu-container .sub-menu,#menu-container .ubermenu-submenu {\r\n        transition: none;\r\n        -moz-transition: none;\r\n        -webkit-transition: none;\r\n    }\r\n\r\n    #menu-container .current-menu-item>a,#menu-container .ubermenu-active>a {\r\n        color: #ff9b9b;\r\n    }\r\n}\r\n\r\n#mobile-button {\r\n    display: none;\r\n    position: absolute;\r\n    top: 25px;\r\n    right: 0;\r\n    background-color: #fff;\r\n    width: 50px;\r\n    height: 50px;\r\n    z-index: 3;\r\n    padding: 40px 0;\r\n    cursor: pointer;\r\n}\r\n\r\n#mobile-button hr {\r\n    width: 15px;\r\n    height: 2px;\r\n    background-color: #292929;\r\n    border: none;\r\n    margin: 0 auto 2px;\r\n}\r\n\r\n@media (max-width:991px) {\r\n    .sticky {\r\n        position: static!important;\r\n    }\r\n\r\n    .ubermenu-tab-content-panel {\r\n        padding: 20px 0 5px;\r\n    }\r\n\r\n    #menu-container .menu-open .ubermenu-submenu,#menu-container .menu-open>.sub-menu,.menu-open>.ubermenu-tab-content-panel {\r\n        display: block!important;\r\n    }\r\n\r\n    #logo-container {\r\n        position: relative;\r\n        width: 100%;\r\n    }\r\n\r\n    #logo-container .tb-cell {\r\n        text-align: left;\r\n    }\r\n\r\n    .header-style-3 #mobile-button {\r\n        left: 48%;\r\n        top: -20px;\r\n    }\r\n\r\n    .header-style-3 #menu-container nav {\r\n        margin-top: 40px;\r\n    }\r\n\r\n    #mobile-button {\r\n        display: block;\r\n    }\r\n\r\n    #logo-2 {\r\n        padding-bottom: 30px;\r\n    }\r\n\r\n    #menu-container {\r\n        clear: both;\r\n        display: none;\r\n        padding-bottom: 30px;\r\n    }\r\n\r\n    #menu-container .sub-menu,#menu-container .ubermenu-submenu {\r\n        display: none!important;\r\n    }\r\n\r\n    #menu-container nav>ul a {\r\n        position: relative;\r\n    }\r\n\r\n    #menu-container .arrow:after {\r\n        content: \"\\F107\";\r\n        font-family: FontAwesome;\r\n        font-size: 16px;\r\n        position: absolute;\r\n        top: 10px;\r\n        right: 0;\r\n    }\r\n\r\n    #menu-container .menu-open>.arrow:after {\r\n        content: \"\\F106\"!important;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a,#menu-container nav>ul>li>a {\r\n        padding: 10px 0;\r\n        border-bottom: 1px solid #E4E4E4;\r\n        display: block;\r\n    }\r\n\r\n    #menu-container .ubermenu-tabs-group>li>a {\r\n        border-bottom: 0;\r\n    }\r\n\r\n    #menu-container .ubermenu-tab-content-panel {\r\n        display: none;\r\n    }\r\n\r\n    #menu-container nav>ul .sub-menu a {\r\n        padding: 15px 0 0;\r\n        display: block;\r\n    }\r\n\r\n    #menu-container nav>ul>li:last-child>a {\r\n        border-bottom: 0;\r\n    }\r\n}\r\n\r\n#page {\r\n    padding: 90px 0 20px;\r\n}\r\n\r\n#header-section {\r\n    margin-bottom: 25px;\r\n}\r\n\r\n#header-section h3 {\r\n    margin-bottom: 0;\r\n}\r\n\r\n#header-section div {\r\n    width: 90px;\r\n    margin: 5px 0;\r\n    height: 5px;\r\n    background: #e4e4e4;\r\n}\r\n\r\n#header-section span {\r\n    font-size: 13px;\r\n    margin-top: -7px;\r\n    display: block;\r\n}\r\n\r\n.post {\r\n    margin-bottom: 60px;\r\n}\r\n\r\n.post>header {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.post>header h3 {\r\n    margin: 40px 0 10px!important;\r\n}\r\n\r\n.post>header span {\r\n    font-style: italic;\r\n    font-size: 13px;\r\n}\r\n\r\n.post>footer {\r\n    position: relative;\r\n    margin-top: 30px;\r\n}\r\n\r\n.post>footer div {\r\n    color: #ff9b9b;\r\n    font-size: 14px;\r\n    font-style: italic;\r\n    position: relative;\r\n    padding-right: 30px;\r\n    z-index: 3;\r\n    display: inline-block;\r\n}\r\n\r\n.post>footer div a:hover {\r\n    color: #292929;\r\n}\r\n\r\n.post>footer hr {\r\n    position: absolute;\r\n    top: 9px;\r\n    width: 100%;\r\n    height: 1px;\r\n    background-color: #e4e4e4;\r\n    border: none;\r\n}\r\n\r\n#page-content>header {\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.editor-styles ul {\r\n    margin: 30px 0 50px 15px;\r\n    list-style-type: disc;\r\n}\r\n\r\n.editor-styles ul li {\r\n    padding-left: 20px;\r\n}\r\n\r\n.editor-styles a {\r\n    color: #ff9b9b;\r\n}\r\n\r\n.alignleft {\r\n    float: left;\r\n    margin: 0 10px 10px 0;\r\n}\r\n\r\n.alignright {\r\n    float: right;\r\n    margin: 0 0 10px 10px;\r\n}\r\n\r\n#masonry-1 .post {\r\n    width: 48%;\r\n    margin: 0 1% 50px;\r\n    float: left;\r\n}\r\n\r\n#masonry-2 .post {\r\n    width: 31%;\r\n    margin: 0 1% 50px;\r\n    float: left;\r\n}\r\n\r\n#post-author {\r\n    position: relative;\r\n    padding-left: 140px;\r\n    min-height: 80px;\r\n    margin: 80px 0 70px;\r\n}\r\n\r\n#post-author img {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n}\r\n\r\n#post-nav {\r\n    text-align: right;\r\n    font-style: italic;\r\n    font-size: 14px;\r\n}\r\n\r\n#post-nav-2 {\r\n    padding-top: 25px;\r\n    border-top: 1px solid #e4e4e4;\r\n    margin-bottom: 50px;\r\n}\r\n\r\n#post-nav-2 a {\r\n    font-style: italic;\r\n    font-size: 14px;\r\n}\r\n\r\n#post-nav-2 .push-right {\r\n    text-align: right;\r\n}\r\n\r\n#comments h4 {\r\n    margin-bottom: 45px;\r\n}\r\n\r\n#comments #list-comments {\r\n    margin-bottom: 100px;\r\n}\r\n\r\n#comments #list-comments li {\r\n    position: relative;\r\n    margin-bottom: 30px;\r\n}\r\n\r\n#comments #list-comments li .comment-body {\r\n    background-color: #f1f0f0;\r\n    margin-left: 100px;\r\n    min-height: 90px;\r\n    padding: 25px 30px;\r\n}\r\n\r\n#comments #list-comments li .comment-body .fn {\r\n    color: #292929;\r\n    font-weight: 600;\r\n}\r\n\r\n#comments #list-comments li .comment-body img {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n}\r\n\r\n#comments #list-comments li .vcard {\r\n    margin-bottom: 15px;\r\n}\r\n\r\n#comments #list-comments li .comment-body:before {\r\n    content: \"\\F0D9\";\r\n    color: #f1f0f0;\r\n    font-family: FontAwesome;\r\n    position: absolute;\r\n    top: 25px;\r\n    left: 94px;\r\n    z-index: 3;\r\n    font-size: 20px;\r\n}\r\n\r\n#comments #list-comments li .commentmetadata {\r\n    font-style: italic;\r\n    font-size: 13px;\r\n}\r\n\r\n#comments #list-comments li .children li {\r\n    margin-top: 10px;\r\n}\r\n\r\n#comments #commentform button,#comments #commentform input,#comments #commentform textarea {\r\n    display: block;\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    font-size: 14px;\r\n    border: 1px solid #e4e4e4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    color: #787878;\r\n    background-color: #fff;\r\n}\r\n\r\n#comments #commentform input {\r\n    max-width: 280px;\r\n    width: 100%;\r\n}\r\n\r\n#comments #commentform textarea {\r\n    width: 100%;\r\n    max-width: 100%;\r\n    height: 175px;\r\n}\r\n\r\n#comments #commentform button {\r\n    padding: 10px 15px;\r\n    cursor: pointer;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n#comments #commentform button:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\n.widget {\r\n    margin-bottom: 50px;\r\n    font-size: 14px;\r\n}\r\n\r\n.widget ul li {\r\n    padding: 15px 0;\r\n    border-bottom: 1px solid #e4e4e4;\r\n}\r\n\r\n.widget ul li:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.widget .search-form {\r\n    padding: 10px 20px;\r\n    border: 1px solid #E4E4E4;\r\n    position: relative;\r\n}\r\n\r\n.widget .search-form input {\r\n    border: none;\r\n    color: #787878;\r\n    width: 88%;\r\n    position: relative;\r\n    top: 1px;\r\n    font-size: 13px;\r\n    float: left;\r\n    letter-spacing: 1px;\r\n}\r\n\r\n.widget .search-form button {\r\n    float: right;\r\n    width: 12%;\r\n    border: none;\r\n    background: 0 0;\r\n    font-size: 13px;\r\n    text-align: center;\r\n    line-height: 20px;\r\n    color: #787878;\r\n    cursor: pointer;\r\n}\r\n\r\n.tagcloud a {\r\n    font-size: 13px;\r\n    border: 1px solid #e4e4e4;\r\n    padding: 3px 7px;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    margin: 4px 4px 4px -3px;\r\n    display: inline-block;\r\n}\r\n\r\n#map-canvas img,.map-canvas img {\r\n    max-width: none!important;\r\n}\r\n\r\n.house-slideshow {\r\n    position: relative;\r\n}\r\n\r\n.house-slideshow .rslides_nav {\r\n    width: 45px;\r\n    height: 45px;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    background-color: #fff;\r\n    position: absolute;\r\n    top: 40%;\r\n    z-index: 3;\r\n    text-align: center;\r\n    font-size: 12px;\r\n    color: #292929;\r\n    line-height: 45px;\r\n    cursor: pointer;\r\n}\r\n\r\n.house-slideshow .prev {\r\n    left: 15px;\r\n}\r\n\r\n.house-slideshow .next {\r\n    right: 15px;\r\n}\r\n\r\n.blockquote-1 {\r\n    padding: 40px 30px;\r\n    background-color: #E4E4E4;\r\n}\r\n\r\n.blockquote-1 blockquote {\r\n    border: none!important;\r\n    padding: 0!important;\r\n    font-size: 16px;\r\n    margin: 0;\r\n}\r\n\r\n.blockquote-1 span {\r\n    color: #292929;\r\n    font-size: 16px!important;\r\n    display: block;\r\n    margin-top: 10px;\r\n    font-style: normal!important;\r\n    font-weight: 700;\r\n}\r\n\r\n.link-1 {\r\n    background-color: #E4E4E4;\r\n    padding: 40px 30px;\r\n}\r\n\r\n.link-1 a {\r\n    font-size: 30px;\r\n    font-weight: 700;\r\n    color: #292929;\r\n}\r\n\r\n.social-1 {\r\n    display: inline-block;\r\n    width: 42px;\r\n    height: 42px;\r\n    line-height: 42px;\r\n    text-align: center;\r\n    font-size: 14px;\r\n    color: #828282;\r\n    background-color: #e4e4e4;\r\n    border-radius: 50%;\r\n    -webkit-border-radius: 50%;\r\n    -moz-border-radius: 50%;\r\n    margin: 0 0 2px 4px;\r\n}\r\n\r\n.social-1:hover {\r\n    color: #ff9b9b!important;\r\n}\r\n\r\n#contactform {\r\n    margin: 0 -15px;\r\n}\r\n\r\n#contactform #error-message,#contactform #success-message,#contactform .loading {\r\n    display: none;\r\n}\r\n\r\n.error {\r\n    border-color: #ff9b9b!important;\r\n}\r\n\r\n.form-1 button,.form-1 input,.form-1 textarea {\r\n    width: 100%;\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    font-size: 14px;\r\n    border: 1px solid #e4e4e4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    color: #787878;\r\n    background-color: #fff;\r\n}\r\n\r\n.form-1 textarea {\r\n    max-width: 100%;\r\n    height: 160px;\r\n}\r\n\r\n.form-1 button {\r\n    padding: 10px 15px;\r\n    cursor: pointer;\r\n    width: auto;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.form-1 button:hover {\r\n    color: #ff9b9b;\r\n}\r\n\r\n#map-canvas {\r\n    width: 100%;\r\n    height: 350px;\r\n}\r\n\r\n#foot-right {\r\n    text-align: right;\r\n    padding-top: 55px;\r\n}\r\n\r\n#foot-left p {\r\n    margin-top: 30px;\r\n}\r\n\r\n#footer-main {\r\n    padding: 25px 0;\r\n    background-color: #fff;\r\n}\r\n\r\n@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {\r\n    .parallax {\r\n        background-attachment: scroll!important;\r\n        background-position: center top!important;\r\n        background-size: cover!important;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width:991px) {\r\n    #home-sticky-wrapper,#menu-container-sticky-wrapper,.header-style-3 #menu-container-sticky-wrapper {\r\n        height: auto!important;\r\n    }\r\n\r\n    .sub-menu,.ubermenu-submenu {\r\n        display: block!important;\r\n    }\r\n\r\n    .space {\r\n        padding-left: 15px!important;\r\n    }\r\n\r\n    .space-left {\r\n        padding-right: 15px!important;\r\n    }\r\n\r\n    #post-nav {\r\n        margin-bottom: 20px;\r\n    }\r\n\r\n    .boxed #page-container {\r\n        width: 92%!important;\r\n    }\r\n}\r\n\r\n@media only screen and (max-width:767px) {\r\n    .parallax {\r\n        background-attachment: scroll!important;\r\n        background-position: center top!important;\r\n        background-size: cover!important;\r\n    }\r\n\r\n    #masonry-1 .post,#masonry-2 .post {\r\n        width: 100%;\r\n        margin: 0 0 50px;\r\n        float: none;\r\n    }\r\n}\r\n\r\n@media (max-width:1024px) {\r\n    .boxed body {\r\n        background-attachment: scroll!important;\r\n    }\r\n}\r\n\r\n.boxed .header-style-2 #menu-container,.boxed .header-style-3 #menu-container {\r\n    left: auto!important;\r\n}\r\n\r\n.boxed #page-container {\r\n    max-width: 1060px;\r\n    margin: 50px auto;\r\n}\r\n\r\n.boxed .sticky {\r\n    max-width: 1060px;\r\n}\r\n\r\n.boxed #footer-main {\r\n    margin-bottom: 50px;\r\n}\r\n\r\n.bg1 {\r\n    background-image: url(/custom_resources/img/bg/pat1.png);\r\n}\r\n\r\n.bg2 {\r\n    background-image: url(/custom_resources/img/bg/pat2.png);\r\n}\r\n\r\n.bg3 {\r\n    background-image: url(/custom_resources/img/bg/pat3.png);\r\n}\r\n\r\n.bg4 {\r\n    background-image: url(/custom_resources/img/bg/pat4.png);\r\n}\r\n\r\n.bg5 {\r\n    background-image: url(/custom_resources/img/bg/pat5.png);\r\n}\r\n\r\n.bg6 {\r\n    background-image: url(/custom_resources/img/bg/pat6.png);\r\n}\r\n\r\n.bg7 {\r\n    background-image: url(/custom_resources/img/bg/pat7.png);\r\n}\r\n\r\n.bg8 {\r\n    background-image: url(/custom_resources/img/bg/pat8.png);\r\n}\r\n\r\n.bg9 {\r\n    background-image: url(/custom_resources/img/bg/image1.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg10 {\r\n    background-image: url(/custom_resources/img/bg/image2.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg11 {\r\n    background-image: url(/custom_resources/img/bg/image3.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n.bg12 {\r\n    background-image: url(/custom_resources/img/bg/image4.jpg);\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position: center top;\r\n}\r\n\r\n#style-switcher {\r\n    width: 230px;\r\n    position: fixed;\r\n    left: -230px;\r\n    top: 100px;\r\n    z-index: 10000;\r\n    -webkit-transition: all .3s;\r\n    -moz-transition: all .3s;\r\n    -o-transition: all .3s;\r\n    transition: all .3s;\r\n    background-color: #fff;\r\n    border: 1px solid #E4E4E4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    padding: 40px 30px;\r\n}\r\n\r\n#style-switcher header {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#style-switcher header hr {\r\n    width: 60px;\r\n    height: 5px;\r\n    background-color: #E4E4E4;\r\n    border: none;\r\n    margin: -10px 0 0;\r\n}\r\n\r\n#style-switcher h6 {\r\n    margin-bottom: 15px;\r\n    color: #454545;\r\n    font-size: 13px;\r\n    font-family: Alike,sans-serif;\r\n    font-weight: 300;\r\n}\r\n\r\n#style-switcher select {\r\n    width: 150px;\r\n}\r\n\r\n#style-switcher span {\r\n    display: block;\r\n    width: 50px;\r\n    height: 50px;\r\n    background: #fff;\r\n    position: absolute;\r\n    right: -49px;\r\n    top: 58px;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    color: #292929;\r\n    border-top: 1px solid #E4E4E4;\r\n    border-right: 1px solid #E4E4E4;\r\n    border-bottom: 1px solid #E4E4E4;\r\n    border-radius: 2px;\r\n    -webkit-border-radius: 2px;\r\n    -moz-border-radius: 2px;\r\n    cursor: pointer;\r\n}\r\n\r\n#style-switcher div {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n#style-switcher img {\r\n    cursor: pointer;\r\n}\r\n\r\n#style-switcher.open {\r\n    left: 0;\r\n}\r\n\r\n@media (max-width:991px) {\r\n    #style-switcher {\r\n        display: none;\r\n    }\r\n}\r\n", ""]);
 
 // exports
 
@@ -74889,230 +74889,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            menuLists: []
+        };
+    },
+
+    computed: {},
+
+    methods: {
+        getMenuList: function getMenuList() {
+            var that = this;
+            axios.get('/api/menu/list').then(function (response) {
+                console.log(response);
+                that.menuLists = response.data.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    },
+    created: function created() {
+        console.log('header页面创建!.');
+    },
     mounted: function mounted() {
+        this.getMenuList();
         console.log('header页面挂载!.');
     }
 });
@@ -75125,1113 +74927,92 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      staticClass: "sticky-wrapper",
+      staticStyle: { height: "130px" },
+      attrs: { id: "home-sticky-wrapper" }
+    },
+    [
+      _c(
+        "header",
+        { staticClass: "header-style-1 sticky", attrs: { id: "home" } },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 clearfix" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "menu-container" } }, [
+                  _c("nav", [
+                    _c(
+                      "ul",
+                      { staticClass: "clearfix" },
+                      _vm._l(_vm.menuLists, function(menuList, index) {
+                        return _c(
+                          "li",
+                          { class: index == 0 ? "current-menu-item" : "" },
+                          [
+                            _c("a", { attrs: { href: "#" + menuList.url } }, [
+                              _vm._v(_vm._s(menuList.name))
+                            ]),
+                            _vm._v(" "),
+                            _vm._l(menuList.child_menu, function(
+                              childMenuList
+                            ) {
+                              return _c("ul", { staticClass: "sub-menu" }, [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      attrs: { href: "#" + childMenuList.url }
+                                    },
+                                    [_vm._v(_vm._s(childMenuList.name))]
+                                  )
+                                ])
+                              ])
+                            })
+                          ],
+                          2
+                        )
+                      })
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "sticky-wrapper",
-        staticStyle: { height: "130px" },
-        attrs: { id: "home-sticky-wrapper" }
-      },
-      [
-        _c(
-          "header",
-          { staticClass: "header-style-1 sticky", attrs: { id: "home" } },
-          [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-12 clearfix" }, [
-                  _c("div", { attrs: { id: "logo-container" } }, [
-                    _c("div", { staticClass: "tb" }, [
-                      _c("div", { staticClass: "tb-cell" }, [
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href:
-                                "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html"
-                            }
-                          },
-                          [
-                            _c("img", {
-                              staticClass: "standard-logo",
-                              attrs: {
-                                src: "/custom_resources/img/logo.png",
-                                alt: ""
-                              }
-                            })
-                          ]
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { attrs: { id: "mobile-button" } }, [
-                      _c("hr"),
-                      _vm._v(" "),
-                      _c("hr"),
-                      _vm._v(" "),
-                      _c("hr")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { attrs: { id: "menu-container" } }, [
-                    _c("nav", [
-                      _c("ul", { staticClass: "clearfix" }, [
-                        _c("li", { staticClass: "current-menu-item" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "arrow",
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html"
-                              }
-                            },
-                            [_vm._v("Home")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass: "sub-menu",
-                              staticStyle: { display: "none", opacity: "1" }
-                            },
-                            [
-                              _c("li", { staticClass: "current-menu-item" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html"
-                                    }
-                                  },
-                                  [_vm._v("Default - Right Sidebar")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/left_sidebar.html"
-                                    }
-                                  },
-                                  [_vm._v("Default - Left Sidebar")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/no_sidebar.html"
-                                    }
-                                  },
-                                  [_vm._v("Default - No Sidebar")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/masonry_2col.html"
-                                    }
-                                  },
-                                  [_vm._v("Masonry - 2 columns")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/masonry_2col_ns.html"
-                                    }
-                                  },
-                                  [_vm._v("Masonry - 2 columns (no sidebar)")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/masonry_3col_ns.html"
-                                    }
-                                  },
-                                  [_vm._v("Masonry - 3 columns (no sidebar)")]
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "arrow",
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                              }
-                            },
-                            [_vm._v("Headers")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass: "sub-menu",
-                              staticStyle: { display: "none", opacity: "1" }
-                            },
-                            [
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/header_style2.html"
-                                    }
-                                  },
-                                  [_vm._v("Header Style 2")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/header_style3.html"
-                                    }
-                                  },
-                                  [_vm._v("Header Style 3")]
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "arrow",
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                              }
-                            },
-                            [_vm._v("Posts")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass: "sub-menu",
-                              staticStyle: { display: "none", opacity: "1" }
-                            },
-                            [
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                                    }
-                                  },
-                                  [_vm._v("Standard")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single_slideshow.html"
-                                    }
-                                  },
-                                  [_vm._v("Slideshow")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single_quote.html"
-                                    }
-                                  },
-                                  [_vm._v("Quote")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single_link.html"
-                                    }
-                                  },
-                                  [_vm._v("Link")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single_video.html"
-                                    }
-                                  },
-                                  [_vm._v("Video")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single_audio.html"
-                                    }
-                                  },
-                                  [_vm._v("Audio")]
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "arrow",
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                              }
-                            },
-                            [_vm._v("Category")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass: "sub-menu",
-                              staticStyle: { display: "none", opacity: "1" }
-                            },
-                            [
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_travel.html"
-                                    }
-                                  },
-                                  [_vm._v("Travel")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_lifestyle.html"
-                                    }
-                                  },
-                                  [_vm._v("Lifestyle")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_video.html"
-                                    }
-                                  },
-                                  [_vm._v("Video")]
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("li", [
-                                _c(
-                                  "a",
-                                  {
-                                    attrs: {
-                                      href:
-                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_music.html"
-                                    }
-                                  },
-                                  [_vm._v("Music")]
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", { staticStyle: { position: "static" } }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "arrow",
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                              }
-                            },
-                            [_vm._v("Mega Menu")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            {
-                              staticClass: "ubermenu-submenu",
-                              staticStyle: { display: "none", opacity: "1" }
-                            },
-                            [
-                              _c("li", [
-                                _c(
-                                  "ul",
-                                  { staticClass: "ubermenu-tabs-group" },
-                                  [
-                                    _c(
-                                      "li",
-                                      { staticClass: "ubermenu-active" },
-                                      [
-                                        _c(
-                                          "a",
-                                          {
-                                            staticClass: "arrow",
-                                            attrs: {
-                                              href:
-                                                "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                            }
-                                          },
-                                          [_vm._v("Travel")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "ul",
-                                          {
-                                            staticClass:
-                                              "ubermenu-tab-content-panel"
-                                          },
-                                          [
-                                            _c("li", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _c("img", {
-                                                    attrs: {
-                                                      src:
-                                                        "/custom_resources/img/megamenu/1.jpg",
-                                                      alt: ""
-                                                    }
-                                                  })
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("p", [
-                                                _c(
-                                                  "a",
-                                                  {
-                                                    attrs: {
-                                                      href:
-                                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                    }
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "amet tincidut mi nunc"
-                                                    )
-                                                  ]
-                                                )
-                                              ])
-                                            ]),
-                                            _vm._v(" "),
-                                            _c("li", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _c("img", {
-                                                    attrs: {
-                                                      src:
-                                                        "/custom_resources/img/megamenu/2.jpg",
-                                                      alt: ""
-                                                    }
-                                                  })
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("p", [
-                                                _c(
-                                                  "a",
-                                                  {
-                                                    attrs: {
-                                                      href:
-                                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                    }
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "imperdiet eget augue"
-                                                    )
-                                                  ]
-                                                )
-                                              ])
-                                            ]),
-                                            _vm._v(" "),
-                                            _c("li", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _c("img", {
-                                                    attrs: {
-                                                      src:
-                                                        "/custom_resources/img/megamenu/3.jpg",
-                                                      alt: ""
-                                                    }
-                                                  })
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c("p", [
-                                                _c(
-                                                  "a",
-                                                  {
-                                                    attrs: {
-                                                      href:
-                                                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                    }
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "placerat ac elit eu"
-                                                    )
-                                                  ]
-                                                )
-                                              ])
-                                            ])
-                                          ]
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass: "arrow",
-                                          attrs: {
-                                            href:
-                                              "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                          }
-                                        },
-                                        [_vm._v("Lifestyle")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "ul",
-                                        {
-                                          staticClass:
-                                            "ubermenu-tab-content-panel"
-                                        },
-                                        [
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/4.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("imperdiet eget augue")]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/5.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "amet tincidut mi nunc"
-                                                  )
-                                                ]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/6.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("placerat ac elit eu")]
-                                              )
-                                            ])
-                                          ])
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass: "arrow",
-                                          attrs: {
-                                            href:
-                                              "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                          }
-                                        },
-                                        [_vm._v("People")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "ul",
-                                        {
-                                          staticClass:
-                                            "ubermenu-tab-content-panel"
-                                        },
-                                        [
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/7.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("placerat ac elit eu")]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/8.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("imperdiet eget augue")]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/9.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "amet tincidut mi nunc"
-                                                  )
-                                                ]
-                                              )
-                                            ])
-                                          ])
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass: "arrow",
-                                          attrs: {
-                                            href:
-                                              "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                          }
-                                        },
-                                        [_vm._v("Video")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "ul",
-                                        {
-                                          staticClass:
-                                            "ubermenu-tab-content-panel"
-                                        },
-                                        [
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/10.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "amet tincidut mi nunc"
-                                                  )
-                                                ]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/11.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("placerat ac elit eu")]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/12.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("imperdiet eget augue")]
-                                              )
-                                            ])
-                                          ])
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass: "arrow",
-                                          attrs: {
-                                            href:
-                                              "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                          }
-                                        },
-                                        [_vm._v("Music")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "ul",
-                                        {
-                                          staticClass:
-                                            "ubermenu-tab-content-panel"
-                                        },
-                                        [
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/13.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "amet tincidut mi nunc"
-                                                  )
-                                                ]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/14.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("imperdiet eget augue")]
-                                              )
-                                            ])
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                attrs: {
-                                                  href:
-                                                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "/custom_resources/img/megamenu/15.jpg",
-                                                    alt: ""
-                                                  }
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c("p", [
-                                              _c(
-                                                "a",
-                                                {
-                                                  attrs: {
-                                                    href:
-                                                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                                                  }
-                                                },
-                                                [_vm._v("placerat ac elit eu")]
-                                              )
-                                            ])
-                                          ])
-                                        ]
-                                      )
-                                    ])
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/about.html"
-                              }
-                            },
-                            [_vm._v("About Me")]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                href:
-                                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/contact.html"
-                              }
-                            },
-                            [_vm._v("Contact")]
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]
-        )
-      ]
-    )
+    return _c("div", { attrs: { id: "logo-container" } }, [
+      _c("div", { staticClass: "tb" }, [
+        _c("div", { staticClass: "tb-cell" }, [
+          _c("a", { attrs: { href: "/" } }, [
+            _c("img", {
+              staticClass: "standard-logo",
+              attrs: { src: "/custom_resources/img/logo.png", alt: "" }
+            })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "mobile-button" } }, [
+        _c("hr"),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("hr")
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -76356,7 +75137,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('header页面挂载!.');
+        console.log('轮播图页面挂载!.');
     }
 });
 
@@ -76389,144 +75170,112 @@ var staticRenderFns = [
         _vm._v(" "),
         _c(
           "div",
-          {
-            staticClass: "owl-carousel owl-theme",
-            staticStyle: { opacity: "1", display: "block" },
-            attrs: { id: "featured" }
-          },
+          { staticClass: "carousel theme", attrs: { id: "featured" } },
           [
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/1.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/1.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/2.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/2.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/3.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/3.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/4.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/4.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/5.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/5.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/6.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            ),
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/6.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "owl-item", staticStyle: { width: "293px" } },
-              [
-                _c("div", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/custom_resources/img/slider/7.jpg",
-                        alt: ""
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Donec sed velit consectetur")])
-                ])
-              ]
-            )
+            _c("div", { staticClass: "item" }, [
+              _c("div", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/custom_resources/img/slider/7.jpg",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("span", [_vm._v("Donec sed velit consectetur")])
+              ])
+            ])
           ]
         )
       ]

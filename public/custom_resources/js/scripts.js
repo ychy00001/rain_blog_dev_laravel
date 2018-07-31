@@ -26,7 +26,7 @@
 		
 		/* ============== PRELOADER ============== */
 		jQuery(window).on("load",function() {
-			jQuery('#preloader').fadeOut(300);
+			jQuery('#preloader').fadeOut(3000);
 		});
 		
 		
@@ -87,57 +87,55 @@
 		
 		
 		/* ============== MENU ============== */
-		jQuery('.sticky').sticky({topSpacing:0});
-		jQuery('#menu-container nav > ul > li').each(function() {
-			if(jQuery('.ubermenu-submenu' , this).length > 0) jQuery(this).css('position', 'static');
-		});
-		
-		jQuery('.ubermenu-tabs-group > li').hover(function() {
-			var parent_ubermenu = jQuery(this).parent();
-			jQuery('> li', parent_ubermenu).each(function() {
-				jQuery(this).removeClass('ubermenu-active');
-			});
-			jQuery(this).addClass('ubermenu-active');
-		});
-		
-		jQuery('#menu-container li').hover(function() {
-			if(jQuery(window).width() > 991) jQuery('> .sub-menu, > .ubermenu-submenu', this).stop().fadeIn(300);
-		}, function() {
-			if(jQuery(window).width() > 991) jQuery('> .sub-menu, > .ubermenu-submenu', this).stop().fadeOut(300);
-		});
-		
+		jQuery('#menu-container').bind("DOMNodeInserted",function () {
+            jQuery('.sticky').sticky({topSpacing:0});
+            jQuery('#menu-container nav > ul > li').each(function() {
+                if(jQuery('.ubermenu-submenu' , this).length > 0) jQuery(this).css('position', 'static');
+            });
 
-        // Mobile menu
-        jQuery('#mobile-button').click(function() {
-            if (jQuery('#menu-container').css('display') == 'none')
-                jQuery('#menu-container').css('display', 'block');
-            else
-                jQuery('#menu-container').css('display', 'none');
+            jQuery('.ubermenu-tabs-group > li').hover(function() {
+                var parent_ubermenu = jQuery(this).parent();
+                jQuery('> li', parent_ubermenu).each(function() {
+                    jQuery(this).removeClass('ubermenu-active');
+                });
+                jQuery(this).addClass('ubermenu-active');
+            });
+
+            jQuery('#menu-container li').hover(function() {
+                if(jQuery(window).width() > 991) jQuery('> .sub-menu, > .ubermenu-submenu', this).stop().fadeIn(300);
+            }, function() {
+                if(jQuery(window).width() > 991) jQuery('> .sub-menu, > .ubermenu-submenu', this).stop().fadeOut(300);
+            });
+
+
+            // Mobile menu
+            jQuery('#mobile-button').click(function() {
+                if (jQuery('#menu-container').css('display') == 'none')
+                    jQuery('#menu-container').css('display', 'block');
+                else
+                    jQuery('#menu-container').css('display', 'none');
+            });
+
+            jQuery('#menu-container li').each(function() {
+                if(jQuery('.sub-menu, .ubermenu-submenu, .ubermenu-tab-content-panel', this).length > 0) jQuery('> a', this).addClass('arrow');
+            });
+
+            jQuery('#menu-container a').click(function() {
+                if(jQuery(window).width() < 991) {
+                    var list = jQuery(this).parent();
+                    if(jQuery('.sub-menu, .ubermenu-tab-content-panel', list).length > 0) {
+                        if(!list.hasClass('menu-open')) jQuery(list).addClass('menu-open');
+                        else jQuery(list).removeClass('menu-open');
+                        return false;
+                    }
+                    if(jQuery('.ubermenu-submenu', list).length > 0) {
+                        if(!list.hasClass('menu-open')) jQuery(list).addClass('menu-open');
+                        else jQuery(list).removeClass('menu-open');
+                        return false;
+                    }
+                }
+            });
         });
-		
-		jQuery('#menu-container li').each(function() {
-			if(jQuery('.sub-menu, .ubermenu-submenu, .ubermenu-tab-content-panel', this).length > 0) jQuery('> a', this).addClass('arrow');
-		});
-		
-		jQuery('#menu-container a').click(function() {
-			if(jQuery(window).width() < 991) {
-				var list = jQuery(this).parent();
-				if(jQuery('.sub-menu, .ubermenu-tab-content-panel', list).length > 0) {
-					if(!list.hasClass('menu-open')) jQuery(list).addClass('menu-open');
-					else jQuery(list).removeClass('menu-open');
-					return false;
-				}
-				if(jQuery('.ubermenu-submenu', list).length > 0) {
-					if(!list.hasClass('menu-open')) jQuery(list).addClass('menu-open');
-					else jQuery(list).removeClass('menu-open');
-					return false;
-				}
-			}
-		});
-		
-		
-
-
 
         /* ============== FORM VALIDATE ============== */
         var personal = jQuery('input[name="personal"]');
