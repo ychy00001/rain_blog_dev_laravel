@@ -33,7 +33,7 @@
     @import "../css/font-awesome.min.css";
     @import "../css/font-Playfair.css";
     @import "../css/lightbox.min.css";
-    @import "../css/owl.carousel.css";
+    @import "../css/owl.carousel.min.css";
     @import "../css/reset.css";
     @import "../css/style.css";
 </style>

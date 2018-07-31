@@ -8,7 +8,7 @@
         </div>
 
 
-        <div id="featured" class="carousel theme">
+        <div id="featured" class="owl-carousel owl-theme">
             <div class="item">
                 <div>
                     <a href="#"><img src="/custom_resources/img/slider/1.jpg" alt=""></a>
