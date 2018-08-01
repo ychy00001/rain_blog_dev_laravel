@@ -9,46 +9,10 @@
 
 
         <div id="featured" class="owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" v-for="(bannerList,index) in bannerLists">
                 <div>
-                    <a href="#"><img src="/custom_resources/img/slider/1.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/2.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/3.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/4.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/5.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/6.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <a href="#"><img src="/custom_resources/img/slider/7.jpg" alt=""></a>
-                    <span>Donec sed velit consectetur</span>
+                    <a :href="bannerList.url"><img :src="'upload/'+bannerList.poster" alt=""></a>
+                    <span>{{bannerList.name}}</span>
                 </div>
             </div>
         </div>
@@ -57,7 +21,37 @@
 
 <script>
     export default {
+        data(){
+            return {
+                bannerLists : []
+            };
+        },
+        computed: {},
+
+        methods: {
+            getBannerList:function () {
+                let that = this;
+                axios.get('/api/banner/list')
+                    .then(function (response) {
+                        console.log(response);
+                        that.bannerLists = response.data.data;
+                        that.$nextTick(function(){
+                            console.log("动态数据渲染完毕!");
+                            let event = document.createEvent("CustomEvent");
+                            event.initCustomEvent("vue.banner.finish",true,true);
+                            document.dispatchEvent(event);
+                        })
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+        },
+        created() {
+            console.log('轮播图页面创建!.')
+        },
         mounted() {
+            this.getBannerList();
             console.log('轮播图页面挂载!.')
         }
     }

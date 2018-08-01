@@ -7,6 +7,8 @@ use App\Models\Base\BaseModel;
 class Article extends BaseModel
 {
     protected $table = 'article';
+    public static $commonColumn = ["id","category_id","title","subtitle","order","comment_count","release_at","cover","user_id"];
+    public static $detailColumn = ["id","category_id","title","subtitle","content","order","comment_count","created_at","updated_at","release_at","cover","user_id"];
 
     /**
      * The attributes that are mass assignable.

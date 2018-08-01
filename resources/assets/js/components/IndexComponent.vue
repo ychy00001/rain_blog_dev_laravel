@@ -3,74 +3,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-8 column">
-                    <article class="post">
+                    <article class="post" v-for="(artRecList ,index) in articleRecommendLists">
                         <header>
                             <div class="media">
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"><img src="/custom_resources/img/home/1.jpg" alt=""></a>
+                                <a :href="'#article?id=' + artRecList.id"><img :src="'upload/'+artRecList.cover" alt=""></a>
                             </div>
-                            <h3><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">My journey into the unknown.</a></h3>
-                            <span>December 22, 2014 / by <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">studio-themes</a> / in: <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Travel</a> / <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">4 Comments</a></span>
+                            <h3>
+                                <a :href="'#article?id=' + artRecList.id">{{artRecList.title}}</a>
+                            </h3>
+                            <span>December 22, 2014 / by <a :href="'#article?id=' + artRecList.id">Rain</a> /
+                                <a :href="'#article?id=' + artRecList.id">{{artRecList.comment_count}} Comments</a></span>
                         </header>
-                        <div class="editor-styles">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere.</p>
-                        </div>
+                        <div class="editor-styles" v-html="artRecList.content"></div>
                         <footer>
                             <div>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Continue Reading...</a>
-                            </div>
-                            <hr>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <header>
-                            <div class="media">
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"><img src="/custom_resources/img/home/2.jpg" alt=""></a>
-                            </div>
-                            <h3><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Top 10 restaurant in California </a></h3>
-                            <span>December 22, 2014 / by <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">studio-themes</a> / in: <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Travel</a> / <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">4 Comments</a></span>
-                        </header>
-                        <div class="editor-styles">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere.</p>
-                        </div>
-                        <footer>
-                            <div>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Continue Reading...</a>
-                            </div>
-                            <hr>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <header>
-                            <div class="media">
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"><img src="/custom_resources/img/home/3.jpg" alt=""></a>
-                            </div>
-                            <h3><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Sunset of summer.</a></h3>
-                            <span>December 22, 2014 / by <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">studio-themes</a> / in: <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Travel</a> / <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">4 Comments</a></span>
-                        </header>
-                        <div class="editor-styles">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere.</p>
-                        </div>
-                        <footer>
-                            <div>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Continue Reading...</a>
-                            </div>
-                            <hr>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <header>
-                            <div class="media">
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"><img src="/custom_resources/img/home/4.jpg" alt=""></a>
-                            </div>
-                            <h3><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Hike in mountains.</a></h3>
-                            <span>December 22, 2014 / by <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">studio-themes</a> / in: <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Travel</a> / <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">4 Comments</a></span>
-                        </header>
-                        <div class="editor-styles">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere.</p>
-                        </div>
-                        <footer>
-                            <div>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html">Continue Reading...</a>
+                                <a :href="'#article?id=' + artRecList.id">Continue Reading...</a>
                             </div>
                             <hr>
                         </footer>
@@ -140,6 +87,30 @@
 
 <script>
     export default {
+        data(){
+            return {
+                articleRecommendLists : []
+            };
+        },
+        computed: {},
+
+        methods: {
+            getArticleList:function () {
+                let that = this;
+                axios.get('/api/article/recommend-list')
+                    .then(function (response) {
+                        console.log(response);
+                        that.articleRecommendLists = response.data.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            }
+        },
+        created() {
+            this.getArticleList();
+            console.log('index页面创建!.')
+        },
         mounted() {
             console.log('index页面挂载!.')
         }

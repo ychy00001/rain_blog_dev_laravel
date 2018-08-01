@@ -75105,45 +75105,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            bannerLists: []
+        };
+    },
+
+    computed: {},
+
+    methods: {
+        getBannerList: function getBannerList() {
+            var that = this;
+            axios.get('/api/banner/list').then(function (response) {
+                console.log(response);
+                that.bannerLists = response.data.data;
+                that.$nextTick(function () {
+                    console.log("动态数据渲染完毕!");
+                    var event = document.createEvent("CustomEvent");
+                    event.initCustomEvent("vue.banner.finish", true, true);
+                    document.dispatchEvent(event);
+                });
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    },
+    created: function created() {
+        console.log('轮播图页面创建!.');
+    },
     mounted: function mounted() {
+        this.getBannerList();
         console.log('轮播图页面挂载!.');
     }
 });
@@ -75156,137 +75149,50 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "section",
+    { staticClass: "clearfix", attrs: { id: "section-featured" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "owl-carousel owl-theme", attrs: { id: "featured" } },
+        _vm._l(_vm.bannerLists, function(bannerList, index) {
+          return _c("div", { staticClass: "item" }, [
+            _c("div", [
+              _c("a", { attrs: { href: bannerList.url } }, [
+                _c("img", {
+                  attrs: { src: "upload/" + bannerList.poster, alt: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", [_vm._v(_vm._s(bannerList.name))])
+            ])
+          ])
+        })
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "clearfix", attrs: { id: "section-featured" } },
-      [
-        _c("div", { attrs: { id: "prev-owl" } }, [
-          _c("i", { staticClass: "fa fa-chevron-left" })
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "next-owl" } }, [
-          _c("i", { staticClass: "fa fa-chevron-right" })
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "owl-carousel owl-theme", attrs: { id: "featured" } },
-          [
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/1.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/2.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/3.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/4.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/5.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/6.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "item" }, [
-              _c("div", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "/custom_resources/img/slider/7.jpg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("Donec sed velit consectetur")])
-              ])
-            ])
-          ]
-        )
-      ]
-    )
+    return _c("div", { attrs: { id: "prev-owl" } }, [
+      _c("i", { staticClass: "fa fa-chevron-left" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "next-owl" } }, [
+      _c("i", { staticClass: "fa fa-chevron-right" })
+    ])
   }
 ]
 render._withStripped = true

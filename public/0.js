@@ -140,61 +140,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            articleRecommendLists: []
+        };
+    },
+
+    computed: {},
+
+    methods: {
+        getArticleList: function getArticleList() {
+            var that = this;
+            axios.get('/api/article/recommend-list').then(function (response) {
+                console.log(response);
+                that.articleRecommendLists = response.data.data;
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+    },
+    created: function created() {
+        this.getArticleList();
+        console.log('index页面创建!.');
+    },
     mounted: function mounted() {
         console.log('index页面挂载!.');
     }
@@ -209,410 +179,186 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("section", { attrs: { id: "page" } }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-lg-8 col-sm-8 column" },
+          [
+            _vm._l(_vm.articleRecommendLists, function(artRecList, index) {
+              return _c("article", { staticClass: "post" }, [
+                _c("header", [
+                  _c("div", { staticClass: "media" }, [
+                    _c(
+                      "a",
+                      { attrs: { href: "#article?id=" + artRecList.id } },
+                      [
+                        _c("img", {
+                          attrs: { src: "upload/" + artRecList.cover, alt: "" }
+                        })
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("h3", [
+                    _c(
+                      "a",
+                      { attrs: { href: "#article?id=" + artRecList.id } },
+                      [_vm._v(_vm._s(artRecList.title))]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [
+                    _vm._v("December 22, 2014 / by "),
+                    _c(
+                      "a",
+                      { attrs: { href: "#article?id=" + artRecList.id } },
+                      [_vm._v("Rain")]
+                    ),
+                    _vm._v(" /\n                            "),
+                    _c(
+                      "a",
+                      { attrs: { href: "#article?id=" + artRecList.id } },
+                      [_vm._v(_vm._s(artRecList.comment_count) + " Comments")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "editor-styles",
+                  domProps: { innerHTML: _vm._s(artRecList.content) }
+                }),
+                _vm._v(" "),
+                _c("footer", [
+                  _c("div", [
+                    _c(
+                      "a",
+                      { attrs: { href: "#article?id=" + artRecList.id } },
+                      [_vm._v("Continue Reading...")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("hr")
+                ])
+              ])
+            }),
+            _vm._v(" "),
+            _vm._m(0)
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { attrs: { id: "page" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-8 col-sm-8 column" }, [
-            _c("article", { staticClass: "post" }, [
-              _c("header", [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/custom_resources/img/home/1.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h3", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("My journey into the unknown.")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("span", [
-                  _vm._v("December 22, 2014 / by "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("studio-themes")]
-                  ),
-                  _vm._v(" / in: "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("Travel")]
-                  ),
-                  _vm._v(" / "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("4 Comments")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "editor-styles" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere."
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("footer", [
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Continue Reading...")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("hr")
-              ])
-            ]),
+    return _c("nav", { attrs: { id: "post-nav" } }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href:
+              "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+          }
+        },
+        [_vm._v("Older Posts »")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-4 col-sm-4 column space" }, [
+      _c("aside", { attrs: { id: "sidebar" } }, [
+        _c("div", { staticClass: "widget" }, [
+          _c("div", { staticClass: "search-form clearfix" }, [
+            _c("input", {
+              attrs: { type: "text", name: "s", placeholder: "Search..." }
+            }),
             _vm._v(" "),
-            _c("article", { staticClass: "post" }, [
-              _c("header", [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/custom_resources/img/home/2.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h3", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Top 10 restaurant in California ")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("span", [
-                  _vm._v("December 22, 2014 / by "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("studio-themes")]
-                  ),
-                  _vm._v(" / in: "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("Travel")]
-                  ),
-                  _vm._v(" / "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("4 Comments")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "editor-styles" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere."
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("footer", [
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Continue Reading...")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("hr")
-              ])
-            ]),
+            _c("button", { attrs: { type: "submit" } }, [
+              _c("i", { staticClass: "fa fa-search" })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "widget" }, [
+          _c("h4", [_vm._v("About")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "widget" }, [
+          _c("h4", [_vm._v("Find me on")]),
+          _vm._v(" "),
+          _c("p", [
+            _c(
+              "a",
+              {
+                staticClass: "social-1",
+                attrs: {
+                  href:
+                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-facebook" })]
+            ),
             _vm._v(" "),
-            _c("article", { staticClass: "post" }, [
-              _c("header", [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/custom_resources/img/home/3.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h3", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Sunset of summer.")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("span", [
-                  _vm._v("December 22, 2014 / by "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("studio-themes")]
-                  ),
-                  _vm._v(" / in: "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("Travel")]
-                  ),
-                  _vm._v(" / "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("4 Comments")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "editor-styles" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere."
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("footer", [
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Continue Reading...")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("hr")
-              ])
-            ]),
+            _c(
+              "a",
+              {
+                staticClass: "social-1",
+                attrs: {
+                  href:
+                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-twitter" })]
+            ),
             _vm._v(" "),
-            _c("article", { staticClass: "post" }, [
-              _c("header", [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src: "/custom_resources/img/home/4.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("h3", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Hike in mountains.")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("span", [
-                  _vm._v("December 22, 2014 / by "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("studio-themes")]
-                  ),
-                  _vm._v(" / in: "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("Travel")]
-                  ),
-                  _vm._v(" / "),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_vm._v("4 Comments")]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "editor-styles" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere."
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("footer", [
-                _c("div", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/single.html"
-                      }
-                    },
-                    [_vm._v("Continue Reading...")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("hr")
-              ])
-            ]),
+            _c(
+              "a",
+              {
+                staticClass: "social-1",
+                attrs: {
+                  href:
+                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-google-plus" })]
+            ),
             _vm._v(" "),
-            _c("nav", { attrs: { id: "post-nav" } }, [
+            _c(
+              "a",
+              {
+                staticClass: "social-1",
+                attrs: {
+                  href:
+                    "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-linkedin" })]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "widget" }, [
+          _c("h4", [_vm._v("Latest Posts")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
               _c(
                 "a",
                 {
@@ -621,324 +367,225 @@ var staticRenderFns = [
                       "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
                   }
                 },
-                [_vm._v("Older Posts »")]
+                [_vm._v("My journey into the unkown.")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                  }
+                },
+                [_vm._v("Top 10 restaurant in California.")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                  }
+                },
+                [_vm._v("Sunset of summer.")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+                  }
+                },
+                [_vm._v("Hike in mountains.")]
               )
             ])
-          ]),
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "widget" }, [
+          _c("h4", [_vm._v("Categories")]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-lg-4 col-sm-4 column space" }, [
-            _c("aside", { attrs: { id: "sidebar" } }, [
-              _c("div", { staticClass: "widget" }, [
-                _c("div", { staticClass: "search-form clearfix" }, [
-                  _c("input", {
-                    attrs: { type: "text", name: "s", placeholder: "Search..." }
-                  }),
-                  _vm._v(" "),
-                  _c("button", { attrs: { type: "submit" } }, [
-                    _c("i", { staticClass: "fa fa-search" })
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "widget" }, [
-                _c("h4", [_vm._v("About")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor."
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "widget" }, [
-                _c("h4", [_vm._v("Find me on")]),
-                _vm._v(" "),
-                _c("p", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "social-1",
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-facebook" })]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "social-1",
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-twitter" })]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "social-1",
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-google-plus" })]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "social-1",
-                      attrs: {
-                        href:
-                          "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                      }
-                    },
-                    [_c("i", { staticClass: "fa fa-linkedin" })]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "widget" }, [
-                _c("h4", [_vm._v("Latest Posts")]),
-                _vm._v(" "),
-                _c("ul", [
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                        }
-                      },
-                      [_vm._v("My journey into the unkown.")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                        }
-                      },
-                      [_vm._v("Top 10 restaurant in California.")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                        }
-                      },
-                      [_vm._v("Sunset of summer.")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                        }
-                      },
-                      [_vm._v("Hike in mountains.")]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "widget" }, [
-                _c("h4", [_vm._v("Categories")]),
-                _vm._v(" "),
-                _c("ul", [
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_travel.html"
-                        }
-                      },
-                      [_vm._v("Travel")]
-                    ),
-                    _vm._v(" (4)")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_lifestyle.html"
-                        }
-                      },
-                      [_vm._v("Lifestyle")]
-                    ),
-                    _vm._v(" (3)")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_video.html"
-                        }
-                      },
-                      [_vm._v("Video")]
-                    ),
-                    _vm._v(" (1)")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href:
-                            "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_music.html"
-                        }
-                      },
-                      [_vm._v("Music")]
-                    ),
-                    _vm._v(" (5)")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "widget tagcloud" }, [
-                _c("h4", [_vm._v("Tags")]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("travel")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("blog")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("lifestyle")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("feature")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("mountain")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("design")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("restaurant")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("journey")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("classic")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href:
-                        "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                    }
-                  },
-                  [_vm._v("sunset")]
-                )
-              ])
+          _c("ul", [
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_travel.html"
+                  }
+                },
+                [_vm._v("Travel")]
+              ),
+              _vm._v(" (4)")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_lifestyle.html"
+                  }
+                },
+                [_vm._v("Lifestyle")]
+              ),
+              _vm._v(" (3)")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_video.html"
+                  }
+                },
+                [_vm._v("Video")]
+              ),
+              _vm._v(" (1)")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href:
+                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_music.html"
+                  }
+                },
+                [_vm._v("Music")]
+              ),
+              _vm._v(" (5)")
             ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "widget tagcloud" }, [
+          _c("h4", [_vm._v("Tags")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("travel")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("blog")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("lifestyle")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("feature")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("mountain")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("design")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("restaurant")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("journey")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("classic")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href:
+                  "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
+              }
+            },
+            [_vm._v("sunset")]
+          )
         ])
       ])
     ])

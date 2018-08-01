@@ -11,6 +11,8 @@ class BaseModel extends Model
     use Notifiable;
     use SoftDeletes;
 
+    public static $commonColumn = [];
+    public static $detailColumn = [];
     /**
      * 应该被调整为日期的属性
      *

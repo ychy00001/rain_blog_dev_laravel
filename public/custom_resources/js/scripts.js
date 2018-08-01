@@ -31,7 +31,10 @@
 		
 		
 		/* ============== FEATURED ============== */
-        owlInit();
+        document.addEventListener("vue.banner.finish",function(){
+            console.log("数据加载完毕");
+            owlInit();
+        });
 
 		/* ============== SLIDESHOW IMAGES ============== */
 		if(jQuery('.house-slideshow').length) {
@@ -198,60 +201,59 @@
 		
 		
 		/* ============== STYLE SWITCHER ============== */
-		
-		
-		jQuery('#style-switcher span').click(function() {
-			var styleswitcher = jQuery(this).parent().css('left');
-			if(parseInt(styleswitcher, 10) < 0) jQuery(this).parent().addClass('open');
-			else jQuery(this).parent().removeClass('open');
-		});
-		
-		if($.cookie('layout') == 'boxed') {
-			jQuery('html').addClass('boxed');
-            owlReInit();
-			jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
-		}
-		else {
-			jQuery('#style-switcher select option:contains("Wide")').prop('selected', true);
-            owlReInit();
-			jQuery('html').removeClass('boxed');
-		}
-		if($.cookie('bg') != '' && $.cookie('bg') != null && $.cookie('layout') != 'wide') {
-			var bg = $.cookie('bg');
-			jQuery('body').addClass(bg);
-			jQuery('html').addClass('boxed');
-			jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
-			top_news_owl.reinit();
-		}
-		
-		
-		jQuery('#style-switcher img').click(function() {
-			var body_class = jQuery(this).attr('data-background');
-			jQuery('body').removeAttr('class');
-			jQuery('body').addClass(body_class);
-			$.cookie('bg', body_class, { expires: 1 });
-			jQuery('html').addClass('boxed');
-			$.cookie('layout', 'boxed', { expires: 1 });
-			jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
-			top_news_owl.reinit();
-		});
-		
-		
-		jQuery('#style-switcher select').on('change', function() {
-			if(this.value == 'Boxed') {
-				jQuery('html').addClass('boxed');
-				top_news_owl.reinit();
-				$.cookie('layout', 'boxed', { expires: 1 });
-				var bg = $.cookie('bg');
-				jQuery('body').addClass(bg);
-			}
-			else {
-				jQuery('html').removeClass('boxed');
-				top_news_owl.reinit();
-				$.cookie('layout', 'wide', { expires: 1 });
-			}
-		});
-		
+        document.addEventListener("vue.banner.finish",function(){
+            jQuery('#style-switcher span').click(function() {
+                var styleswitcher = jQuery(this).parent().css('left');
+                if(parseInt(styleswitcher, 10) < 0) jQuery(this).parent().addClass('open');
+                else jQuery(this).parent().removeClass('open');
+            });
+
+            if($.cookie('layout') == 'boxed') {
+                jQuery('html').addClass('boxed');
+                owlReInit();
+                jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
+            }
+            else {
+                jQuery('#style-switcher select option:contains("Wide")').prop('selected', true);
+                owlReInit();
+                jQuery('html').removeClass('boxed');
+            }
+            if($.cookie('bg') != '' && $.cookie('bg') != null && $.cookie('layout') != 'wide') {
+                var bg = $.cookie('bg');
+                jQuery('body').addClass(bg);
+                jQuery('html').addClass('boxed');
+                jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
+                top_news_owl.reinit();
+            }
+
+
+            jQuery('#style-switcher img').click(function() {
+                var body_class = jQuery(this).attr('data-background');
+                jQuery('body').removeAttr('class');
+                jQuery('body').addClass(body_class);
+                $.cookie('bg', body_class, { expires: 1 });
+                jQuery('html').addClass('boxed');
+                $.cookie('layout', 'boxed', { expires: 1 });
+                jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
+                top_news_owl.reinit();
+            });
+
+
+            jQuery('#style-switcher select').on('change', function() {
+                if(this.value == 'Boxed') {
+                    jQuery('html').addClass('boxed');
+                    top_news_owl.reinit();
+                    $.cookie('layout', 'boxed', { expires: 1 });
+                    var bg = $.cookie('bg');
+                    jQuery('body').addClass(bg);
+                }
+                else {
+                    jQuery('html').removeClass('boxed');
+                    top_news_owl.reinit();
+                    $.cookie('layout', 'wide', { expires: 1 });
+                }
+            });
+        });
 
     });
 })(jQuery);
@@ -267,6 +269,7 @@ function owlInit() {
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         smartSpeed: 700,
+        margin:5,
     });
     jQuery("#next-owl").click(function(){
         dom.trigger('next.owl.carousel');

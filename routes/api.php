@@ -13,9 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
 
 Route::prefix('category')->group(function () {
     Route::get('list', 'Api\CategoryController@categories');
@@ -23,6 +23,11 @@ Route::prefix('category')->group(function () {
 
 Route::prefix('menu')->group(function () {
     Route::get('list', 'Api\MenuController@menuList');
+});
+
+Route::prefix('article')->group(function () {
+    Route::get('list', 'Api\ArticleController@articleList');
+    Route::get('recommend-list', 'Api\ArticleController@articleRecommendList');
 });
 
 Route::prefix('banner')->group(function () {
