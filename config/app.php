@@ -179,6 +179,7 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Encore\Admin\AdminServiceProvider::class,
         YuanChao\Editor\EndaEditorServiceProvider::class, //markdown编辑器
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
 
@@ -229,6 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'EndaEditor' => YuanChao\Editor\Facade\EndaEditorFacade::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
