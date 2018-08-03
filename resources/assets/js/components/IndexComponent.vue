@@ -36,21 +36,18 @@
                         </div>
                         <div class="widget">
                             <h4>About</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor.</p>
+                            <p> 我是一只程序员！</p>
                         </div>
                         <div class="widget">
                             <h4>Find me on</h4>
-                            <p>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#" class="social-1"><i class="fa fa-facebook"></i></a>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#" class="social-1"><i class="fa fa-twitter"></i></a>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#" class="social-1"><i class="fa fa-google-plus"></i></a>
-                                <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#" class="social-1"><i class="fa fa-linkedin"></i></a>
-                            </p>
+                            <p>WeChat：ychy0001</p>
+                            <p>E-mail①：ychy0001@gmail.com</p>
+                            <p>E-mail②：ychy0001@163.com</p>
                         </div>
                         <div class="widget">
                             <h4>Latest Posts</h4>
                             <ul>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">My journey into the unkown.</a></li>
+                                <li v-for="(category ,index) in categoryLists"><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">My journey into the unkown.</a></li>
                                 <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Top 10 restaurant in California.</a></li>
                                 <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Sunset of summer.</a></li>
                                 <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Hike in mountains.</a></li>
@@ -59,10 +56,7 @@
                         <div class="widget">
                             <h4>Categories</h4>
                             <ul>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_travel.html">Travel</a> (4)</li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_lifestyle.html">Lifestyle</a> (3)</li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_video.html">Video</a> (1)</li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/category_music.html">Music</a> (5)</li>
+                                <li v-for="(category ,index) in categoryLists"><a :href="'#article-list?category_id=' + category.id">{{category.class_name}}</a> ({{category.article_num}})</li>
                             </ul>
                         </div>
                         <div class="widget tagcloud">
@@ -89,13 +83,15 @@
     export default {
         data(){
             return {
-                articleRecommendLists : []
+                articleRecommendLists : [],
+                articleLatestLists : [],
+                categoryLists : [],
             };
         },
         computed: {},
 
         methods: {
-            getArticleList:function () {
+            getArticleRecommendList:function () {
                 let that = this;
                 axios.get('/api/article/recommend-list')
                     .then(function (response) {
@@ -105,10 +101,34 @@
                     .catch(function (error) {
                         console.log(error);
                     });
+            },
+            getArticleLatestList:function () {
+                let that = this;
+                axios.get('/api/article/latest-list')
+                    .then(function (response) {
+                        console.log(response);
+                        that.articleLatestLists = response.data.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+            getCategoryList:function () {
+                let that = this;
+                axios.get('/api/category/list')
+                    .then(function (response) {
+                        console.log(response);
+                        that.category = response.data.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
             }
         },
         created() {
-            this.getArticleList();
+            this.getArticleRecommendList();
+            this.getArticleLatestList();
+            this.getCategoryList();
             console.log('index页面创建!.')
         },
         mounted() {

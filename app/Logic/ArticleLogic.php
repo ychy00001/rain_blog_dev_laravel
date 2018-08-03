@@ -2,7 +2,7 @@
 /**
  * 文章逻辑
  *
- * 首页Banner数据逻辑处理
+ * 文章数据逻辑处理
  * @author  Rain
  * @version 1.0
  */
@@ -32,6 +32,23 @@ class ArticleLogic
                 $summary = substr($value['content'],0,strpos($value['content'],"<!--more-->"));
                 $allArticle[$key]['content'] = EndaEditor::MarkDecode($summary);
             }
+        }
+        return $allArticle;
+    }
+
+    /**
+     * 获取文章最近数据
+     *
+     * @author Rain
+     * @date   2018/8/3 下午4:35
+     *
+     * @return array
+     */
+    public static function getArticleLatestList()
+    {
+        $allArticle = with(new Article())->select(Article::$commonColumn)->with("category")->orderBy('release_at', "desc")->limit(4)->get();
+        if (!empty($allArticle)) {
+            $allArticle = $allArticle->toArray();
         }
         return $allArticle;
     }

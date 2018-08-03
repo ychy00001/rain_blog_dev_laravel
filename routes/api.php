@@ -28,6 +28,7 @@ Route::prefix('menu')->group(function () {
 Route::prefix('article')->group(function () {
     Route::get('list', 'Api\ArticleController@articleList');
     Route::get('recommend-list', 'Api\ArticleController@articleRecommendList');
+    Route::get('latest-list', 'Api\ArticleController@articleLatestList');
 });
 
 Route::prefix('banner')->group(function () {

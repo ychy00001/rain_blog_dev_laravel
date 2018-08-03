@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Logic\CategoryLogic;
+use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Support\Facades\Request;
 use Psy\Util\Json;
@@ -32,14 +34,7 @@ class CategoryController extends Controller
      * @return array
      */
     public function categories(Request $request){
-        $categories = Category::all();
-        $result = [];
-        foreach ($categories as $category){
-            $result[] = [
-                'id' => $category->id,
-                'text' => $category->class_name,
-            ];
-        }
-        return $result;
+        $categories = CategoryLogic::getCategoryList();
+        return api_success($categories);
     }
 }
