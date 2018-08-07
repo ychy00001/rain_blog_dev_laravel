@@ -45,7 +45,8 @@ class ArticleController extends Controller
      *     }
      *
      */
-    public function articleRecommendList(Request $request){
+    public function articleRecommendList(Request $request)
+    {
         $list = ArticleLogic::getArticleRecommendList();
         return api_success($list);
     }
@@ -102,7 +103,8 @@ class ArticleController extends Controller
      *}
      *
      */
-    public function articleList(Request $request){
+    public function articleList(Request $request)
+    {
         $list = ArticleLogic::getArticleList();
         return api_success($list);
     }
@@ -144,8 +146,55 @@ class ArticleController extends Controller
      *     }
      *
      */
-    public function articleLatestList(Request $request){
+    public function articleLatestList(Request $request)
+    {
         $list = ArticleLogic::getArticleLatestList();
         return api_success($list);
+    }
+
+    /**
+     * 文章详情
+     *
+     * @param Request $request
+     * @return array
+     *
+     * @api {get} /article/latest 获取文章列表
+     * @apiName ArticleLatestList
+     * @apiGroup Article
+     *
+     *
+     * @apiSuccess {String} code 返回码
+     * @apiSuccess {String} message   返回信息
+     * @apiSuccess {Array}   data 返回数据
+     *
+     * @apiSuccessExample Success-Response:
+     *     HTTP/1.1 200 OK
+     *     {
+     *       "code": 200,
+     *       "message": "成功"
+     *       "data":{
+     *           "id": 1,
+     *           "category": {
+     *               "class_name": "CSS"
+     *            },
+     *           "user_id": 1,
+     *           "title": "我是一条鱼",
+     *           "subtitle": "我是一只鱼",
+     *           "cover": "http://image.png",
+     *           "content": "我是内容",
+     *           "order": 1,
+     *           "comment_count": 1,
+     *           "created_at": 1123123,
+     *           "updated_at": 4124124,
+     *           "deleted_at": 123213,
+     *           "release_at": 124214,
+     *        }
+     *     }
+     *
+     */
+    public function articleDetail(Request $request)
+    {
+        $detail = ArticleLogic::getArticleDetail($request::get("id"));
+        return api_success($detail);
     }
 }

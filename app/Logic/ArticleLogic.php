@@ -70,4 +70,23 @@ class ArticleLogic
         return $allArticle;
     }
 
+    /**
+     * 获取文章详情
+     *
+     * @author Rain
+     * @date   2018/8/7 下午6:54
+     *
+     * @param $id
+     * @return array
+     */
+    public static function getArticleDetail($id){
+        if(empty($id)){
+            return [];
+        }
+        $article = with(new Article())->select(Article::$detailColumn)->with('category')->where('id','=',$id)->first();
+        if(!empty($article)){
+            return $article->toArray();
+        }
+        return [];
+    }
 }
