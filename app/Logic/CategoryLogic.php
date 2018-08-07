@@ -11,7 +11,7 @@ namespace App\Logic;
 
 
 use App\Models\Article;
-use YuanChao\Editor\EndaEditor;
+use App\Models\Category;
 
 class CategoryLogic
 {
@@ -30,7 +30,7 @@ class CategoryLogic
             $categories = $categories->toArray();
         }
         foreach ($categories as $key => $category){
-            $articleNumber = with(Article::class)->select("id")->where(['category_id' => $category->id])->count();
+            $articleNumber = with(new Article())->select("id")->where(['category_id' => $category->id])->count();
             $categories[$key]['article_num'] = $articleNumber;
         }
         return $categories;

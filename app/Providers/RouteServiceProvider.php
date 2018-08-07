@@ -74,15 +74,14 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * Define the "api" routes for the application.
-     *
-     * These routes are typically stateless.
+     * 微信相关路由
      *
      * @return void
      */
     protected function mapWechatRoutes()
     {
         Route::prefix('wechat')
+            ->middleware('oauth')
             ->namespace($this->namespace)
             ->group(base_path('routes/wechat.php'));
     }

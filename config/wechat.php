@@ -80,6 +80,10 @@ return [
             'secret' => env('WECHAT_OFFICIAL_FAKE_ACCOUNT_SECRET', 'your-app-secret'),    // AppSecret
             'token' => env('WECHAT_OFFICIAL_FAKE_ACCOUNT_TOKEN', 'your-token'),           // Token
             'aes_key' => env('WECHAT_OFFICIAL_FAKE_ACCOUNT_AES_KEY', ''),                 // EncodingAESKey
+            'oauth' => [
+                'scopes'   => ['snsapi_userinfo'],
+                'callback' => '/wechat/oauth/callback',
+            ],
         ]
     ],
 

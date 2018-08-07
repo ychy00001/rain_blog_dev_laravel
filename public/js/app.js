@@ -75272,14 +75272,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -75313,111 +75305,18 @@ var staticRenderFns = [
                 attrs: { src: "/custom_resources/img/logo2.png", alt: "" }
               }),
               _vm._v(" "),
-              _c("p", [_vm._v("© 2015 House. All Rights Reserved.")])
+              _c("p", [
+                _vm._v(
+                  "京ICP备17029279号 © Copyright 2017-2018 ychy666.com All rights reserved"
+                )
+              ])
             ]
           ),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-lg-6 col-sm-6", attrs: { id: "foot-right" } },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-facebook" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-twitter" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-google-plus" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-linkedin" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-pinterest" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-tumblr" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-instagram" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "social-1",
-                  attrs: {
-                    href:
-                      "http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-rss" })]
-              )
-            ]
-          )
+          _c("div", {
+            staticClass: "col-lg-6 col-sm-6",
+            attrs: { id: "foot-right" }
+          })
         ])
       ])
     ])

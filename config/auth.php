@@ -45,6 +45,11 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+
+        'wechat' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
     ],
 
     /*

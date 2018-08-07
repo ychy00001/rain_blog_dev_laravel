@@ -6,24 +6,24 @@
                     <article class="post" v-for="(artRecList ,index) in articleRecommendLists">
                         <header>
                             <div class="media">
-                                <a :href="'#article?id=' + artRecList.id"><img :src="'upload/'+artRecList.cover" alt=""></a>
+                                <a :href="'#/article?id=' + artRecList.id"><img :src="'upload/'+artRecList.cover" alt=""></a>
                             </div>
                             <h3>
-                                <a :href="'#article?id=' + artRecList.id">{{artRecList.title}}</a>
+                                <a :href="'#/article?id=' + artRecList.id">{{artRecList.title}}</a>
                             </h3>
                             <span>December 22, 2014 / by <a :href="'#article?id=' + artRecList.id">Rain</a> /
-                                <a :href="'#article?id=' + artRecList.id">{{artRecList.comment_count}} Comments</a></span>
+                                <a :href="'#/article?id=' + artRecList.id">{{artRecList.comment_count}} Comments</a></span>
                         </header>
                         <div class="editor-styles" v-html="artRecList.content"></div>
                         <footer>
                             <div>
-                                <a :href="'#article?id=' + artRecList.id">Continue Reading...</a>
+                                <a :href="'#/article?id=' + artRecList.id">Continue Reading...</a>
                             </div>
                             <hr>
                         </footer>
                     </article>
                     <nav id="post-nav">
-                        <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Older Posts »</a>
+                        <a href="#/article-list">Older Posts »</a>
                     </nav>
                 </div>
                 <div class="col-lg-4 col-sm-4 column space">
@@ -47,30 +47,14 @@
                         <div class="widget">
                             <h4>Latest Posts</h4>
                             <ul>
-                                <li v-for="(category ,index) in categoryLists"><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">My journey into the unkown.</a></li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Top 10 restaurant in California.</a></li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Sunset of summer.</a></li>
-                                <li><a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">Hike in mountains.</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget">
-                            <h4>Categories</h4>
-                            <ul>
-                                <li v-for="(category ,index) in categoryLists"><a :href="'#article-list?category_id=' + category.id">{{category.class_name}}</a> ({{category.article_num}})</li>
+                                <li v-for="(artLatest ,index) in articleLatestLists"><a :href="'#/article?id=' + artLatest.id">{{artLatest.title}}</a></li>
                             </ul>
                         </div>
                         <div class="widget tagcloud">
-                            <h4>Tags</h4>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">travel</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">blog</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">lifestyle</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">feature</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">mountain</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">design</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">restaurant</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">journey</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">classic</a>
-                            <a href="http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2015/1/14/706c9c78623f129a044220c0ad3c2013/index.html#">sunset</a>
+                            <h4>Categories</h4>
+                            <ul>
+                                <li v-for="(category ,index) in categoryLists"><a :href="'#/article-list?category_id=' + category.id">{{category.class_name}}({{category.article_num}})</a></li>
+                            </ul>
                         </div>
                     </aside>
                 </div>
@@ -95,7 +79,6 @@
                 let that = this;
                 axios.get('/api/article/recommend-list')
                     .then(function (response) {
-                        console.log(response);
                         that.articleRecommendLists = response.data.data;
                     })
                     .catch(function (error) {
@@ -106,7 +89,6 @@
                 let that = this;
                 axios.get('/api/article/latest-list')
                     .then(function (response) {
-                        console.log(response);
                         that.articleLatestLists = response.data.data;
                     })
                     .catch(function (error) {
@@ -117,8 +99,7 @@
                 let that = this;
                 axios.get('/api/category/list')
                     .then(function (response) {
-                        console.log(response);
-                        that.category = response.data.data;
+                        that.categoryLists = response.data.data;
                     })
                     .catch(function (error) {
                         console.log(error);
