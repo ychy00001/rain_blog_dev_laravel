@@ -2,7 +2,14 @@
     <div id="page-container">
         <layout-header></layout-header>
         <layout-gallery></layout-gallery>
-        <router-view></router-view>
+        <section id="page">
+            <div class="container">
+                <div class="row">
+                    <router-view></router-view>
+                    <layout-sidebar></layout-sidebar>
+                </div>
+            </div>
+        </section>
         <layout-footer></layout-footer>
     </div>
 </template>
@@ -10,6 +17,7 @@
     import LayoutHeader from './components/layout/LayoutHeaderComponent.vue'
     import LayoutGallery from './components/layout/LayoutGalleryComponent.vue'
     import LayoutFooter from './components/layout/LayoutFooterComponent.vue'
+    import LayoutSidebar from './components/layout/LayoutSidebarComponent.vue'
 
     export default {
         data(){
@@ -19,6 +27,7 @@
             "layout-header" : LayoutHeader,
             "layout-footer" : LayoutFooter,
             "layout-gallery" : LayoutGallery,
+            "layout-sidebar" : LayoutSidebar,
         },
         computed: {},
         methods: {

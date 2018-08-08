@@ -85,6 +85,7 @@ class ArticleLogic
         }
         $article = with(new Article())->select(Article::$detailColumn)->with('category')->where('id','=',$id)->first();
         if(!empty($article)){
+            $article->content = EndaEditor::MarkDecode($article->content);
             return $article->toArray();
         }
         return [];
