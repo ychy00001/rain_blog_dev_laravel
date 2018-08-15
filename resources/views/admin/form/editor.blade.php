@@ -1,8 +1,7 @@
-<script src="http://cdn.bootcss.com/highlight.js/8.4/highlight.min.js"></script>
 <script src="http://cdn.bootcss.com/marked/0.3.2/marked.min.js"></script>
 <script type="text/javascript" src="http://cdn.bootcss.com/codemirror/4.10.0/codemirror.min.js"></script>
 <script type="text/javascript" src="http://cdn.bootcss.com/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
-<script type="text/javascript" src="{{ asset('plugin/editor/js/highlight.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('plugin/editor/js/highlight.js') }}"></script>--}}
 <script type="text/javascript" src="{{ asset('plugin/editor/js/modal.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugin/editor/js/MIDI.js') }}"></script>
 <script type="text/javascript" src="{{ asset('plugin/editor/js/fileupload.js') }}"></script>

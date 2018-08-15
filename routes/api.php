@@ -38,6 +38,7 @@ Route::prefix('banner')->group(function () {
 
 Route::prefix('upload')->group(function () {
     Route::get('image', 'Api\UploadController@uploadImg');
+    Route::post('image', 'Api\UploadController@uploadImg');
 });
 
 Route::prefix('tools')->group(function () {
