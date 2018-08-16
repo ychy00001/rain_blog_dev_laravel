@@ -17,9 +17,9 @@
         <div id="app">
         </div>
     </body>
-    <script src="{{ mix('js/manifest.js') }}"></script>
-    <script src="{{ mix('js/vendor.js') }}"></script>
-    <script src="{{ mix('js/app.js') }}"></script>
-    <script src="/custom_resources/js/plugins.js"></script>
-    <script src="/custom_resources/js/scripts.js"></script>
+    <script defer src="{{ mix('js/manifest.js') }}"></script>
+    <script defer src="{{ mix('js/vendor.js') }}"></script>
+    <script defer src="{{ mix('js/app.js') }}"></script>
+    <script defer src="/custom_resources/js/plugins.js"></script>
+    <script defer src="/custom_resources/js/scripts.js"></script>
 </html>
