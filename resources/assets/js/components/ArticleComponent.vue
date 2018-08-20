@@ -124,10 +124,8 @@
         created() {
             this.articleId = this.$route.params.id;
             this.getArticleDetail();
-            console.log('article页面创建!.')
         },
         mounted() {
-            console.log('article页面挂载!.')
         }
     }
 </script>

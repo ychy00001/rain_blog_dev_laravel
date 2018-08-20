@@ -1,16 +1,16 @@
 <template>
     <div id="page-container">
-        <layout-header></layout-header>
-        <layout-gallery></layout-gallery>
+        <layout-header @load-layout-finish="loadLayoutFinish"></layout-header>
+        <layout-gallery @load-layout-finish="loadLayoutFinish"></layout-gallery>
         <section id="page">
             <div class="container">
                 <div class="row">
-                    <router-view></router-view>
-                    <layout-sidebar></layout-sidebar>
+                    <router-view @load-layout-finish="loadLayoutFinish"></router-view>
+                    <layout-sidebar @load-layout-finish="loadLayoutFinish"></layout-sidebar>
                 </div>
             </div>
         </section>
-        <layout-footer></layout-footer>
+        <layout-footer @load-layout-finish="loadLayoutFinish"></layout-footer>
     </div>
 </template>
 <script>
@@ -21,7 +21,10 @@
 
     export default {
         data(){
-            return {}
+            return {
+                loadLayoutCount : 0,
+                loadLayoutTotal : 5,
+            }
         },
         components: {
             "layout-header" : LayoutHeader,
@@ -31,7 +34,18 @@
         },
         computed: {},
         methods: {
-
+            loadLayoutFinish:function () {
+                this.loadLayoutCount++;
+                if(this.loadLayoutCount === this.loadLayoutTotal){
+                    //发送组件加载完成事件
+                    let event = document.createEvent("CustomEvent");
+                    event.initCustomEvent("vue.component.finish",true,true);
+                    document.dispatchEvent(event);
+                }
+            }
+        },
+        created() {
+            this.loadLayoutCount = 0;
         },
         mounted() {
         },
@@ -40,7 +54,7 @@
 <style>
     @import "../css/font-Alike.css";
     @import "../css/font-awesome.min.css";
-    @import "../css/font-Playfair.css";
+    /*@import "../css/font-Playfair.css";*/
     @import "../css/lightbox.min.css";
     @import "../css/owl.carousel.min.css";
     @import "../css/reset.css";

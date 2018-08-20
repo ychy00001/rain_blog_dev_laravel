@@ -10,8 +10,8 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 // import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
 // Vue.use(ElementUI);
+import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App.vue'
 import router from './router/index.js'
 

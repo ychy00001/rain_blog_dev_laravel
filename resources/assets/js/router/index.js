@@ -13,11 +13,13 @@ export default new VueRouter({
             name: 'index',
             path: '/index',
             component: resolve => void(require(['../components/IndexComponent.vue'], resolve))
+            // component: () => import('../components/IndexComponent.vue')
         },
         {
             name: 'article',
             path: '/article/:id',
             component: resolve => void(require(['../components/ArticleComponent.vue'], resolve))
+            // component: () => import('../components/ArticleComponent.vue')
         }
     ]
 });

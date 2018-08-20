@@ -25,14 +25,21 @@
 		
 		
 		/* ============== PRELOADER ============== */
-		jQuery(window).on("load",function() {
-			jQuery('#preloader').fadeOut(3000);
-		});
+		// 所有组件加载完毕后执行
+        document.addEventListener("vue.component.finish",function(){
+            jQuery('#preloader').fadeOut(300);
+            jQuery('#style-switcher').css('visibility','visible');
+            jQuery('body').css('overflow',"scroll");
+        });
+        // jQuery(window).on("load",function() {
+			// jQuery('#preloader').fadeOut(300);
+        // });
+
 		
 		
 		/* ============== FEATURED ============== */
         document.addEventListener("vue.banner.finish",function(){
-            console.log("数据加载完毕");
+            //banner数据加载完毕
             owlInit();
         });
 
@@ -202,6 +209,10 @@
 		
 		/* ============== STYLE SWITCHER ============== */
         document.addEventListener("vue.banner.finish",function(){
+            //初始化背景和界面格式
+            $.cookie('layout', 'boxed', { expires: 1 });
+            $.cookie('bg', "bg9", { expires: 1 });
+
             jQuery('#style-switcher span').click(function() {
                 var styleswitcher = jQuery(this).parent().css('left');
                 if(parseInt(styleswitcher, 10) < 0) jQuery(this).parent().addClass('open');
@@ -223,7 +234,7 @@
                 jQuery('body').addClass(bg);
                 jQuery('html').addClass('boxed');
                 jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
-                top_news_owl.reinit();
+                owlReInit();
             }
 
 
@@ -235,21 +246,21 @@
                 jQuery('html').addClass('boxed');
                 $.cookie('layout', 'boxed', { expires: 1 });
                 jQuery('#style-switcher select option:contains("Boxed")').prop('selected', true);
-                top_news_owl.reinit();
+                owlReInit();
             });
 
 
             jQuery('#style-switcher select').on('change', function() {
                 if(this.value == 'Boxed') {
                     jQuery('html').addClass('boxed');
-                    top_news_owl.reinit();
+                    owlReInit();
                     $.cookie('layout', 'boxed', { expires: 1 });
                     var bg = $.cookie('bg');
                     jQuery('body').addClass(bg);
                 }
                 else {
                     jQuery('html').removeClass('boxed');
-                    top_news_owl.reinit();
+                    owlReInit();
                     $.cookie('layout', 'wide', { expires: 1 });
                 }
             });

@@ -23,7 +23,9 @@
     export default {
         data(){
             return {
-                bannerLists : []
+                bannerLists : [],
+                ajaxCount : 0,
+                ajaxTotal : 1,
             };
         },
         computed: {},
@@ -33,26 +35,31 @@
                 let that = this;
                 axios.get('/api/banner/list')
                     .then(function (response) {
-                        console.log(response);
                         that.bannerLists = response.data.data;
                         that.$nextTick(function(){
-                            console.log("动态数据渲染完毕!");
                             let event = document.createEvent("CustomEvent");
                             event.initCustomEvent("vue.banner.finish",true,true);
                             document.dispatchEvent(event);
-                        })
+                        });
+                        that.loadAjaxFinish();
                     })
                     .catch(function (error) {
                         console.log(error);
+                        that.loadAjaxFinish();
                     });
+            },
+            loadAjaxFinish:function () {
+                this.ajaxCount++;
+                if(this.ajaxCount === this.ajaxTotal){
+                    this.$emit('load-layout-finish');
+                }
             }
         },
         created() {
-            console.log('轮播图页面创建!.')
+            this.ajaxCount = 0;
         },
         mounted() {
             this.getBannerList();
-            console.log('轮播图页面挂载!.')
         }
     }
 </script>

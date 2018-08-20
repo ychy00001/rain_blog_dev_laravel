@@ -30,6 +30,8 @@
         data(){
             return {
                 articleRecommendLists : [],
+                ajaxCount : 0,
+                ajaxTotal : 1,
             };
         },
         computed: {},
@@ -40,19 +42,26 @@
                 axios.get('/api/article/recommend-list')
                     .then(function (response) {
                         that.articleRecommendLists = response.data.data;
+                        that.loadAjaxFinish();
                     })
                     .catch(function (error) {
+                        that.loadAjaxFinish();
                         console.log(error);
                     });
+            },
+            loadAjaxFinish:function () {
+                this.ajaxCount++;
+                if(this.ajaxCount === this.ajaxTotal){
+                    this.$emit('load-layout-finish');
+                }
             },
 
         },
         created() {
+            this.ajaxCount = 0;
             this.getArticleRecommendList();
-            console.log('index页面创建!.')
         },
         mounted() {
-            console.log('index页面挂载!.')
         }
     }
 </script>

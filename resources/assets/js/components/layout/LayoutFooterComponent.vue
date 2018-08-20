@@ -15,8 +15,25 @@
 
 <script>
     export default {
+        data(){
+            return {
+                ajaxCount : 0,
+                ajaxTotal : 1,
+            };
+        },
+        methods: {
+            loadAjaxFinish:function () {
+                this.ajaxCount++;
+                if(this.ajaxCount === this.ajaxTotal){
+                    this.$emit('load-layout-finish');
+                }
+            }
+        },
+        created() {
+            this.ajaxCount = 0;
+        },
         mounted() {
-            console.log('footer页面挂载!.')
+            this.$emit('load-layout-finish');
         }
     }
 </script>

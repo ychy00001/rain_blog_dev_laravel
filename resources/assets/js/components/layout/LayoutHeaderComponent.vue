@@ -43,7 +43,9 @@
     export default {
         data(){
             return {
-                menuLists : []
+                menuLists : [],
+                ajaxCount : 0,
+                ajaxTotal : 1,
             };
         },
         computed: {},
@@ -53,20 +55,26 @@
                 let that = this;
                 axios.get('/api/menu/list')
                     .then(function (response) {
-                        console.log(response);
                         that.menuLists = response.data.data;
+                        that.loadAjaxFinish();
                     })
                     .catch(function (error) {
                         console.log(error);
+                        that.loadAjaxFinish();
                     });
+            },
+            loadAjaxFinish:function () {
+                this.ajaxCount++;
+                if(this.ajaxCount === this.ajaxTotal){
+                    this.$emit('load-layout-finish');
+                }
             }
         },
         created() {
+            this.ajaxCount = 0;
             this.getMenuList();
-            console.log('header页面创建!.')
         },
         mounted() {
-            console.log('header页面挂载!.')
         }
     }
 </script>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" class="boxed">
     <head>
         <title>远方小镇</title>
         <meta charset="utf-8">
@@ -12,9 +12,45 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body>
+    <body class="bg9" style="overflow: hidden">
         <div id="preloader"></div>
         <div id="app">
+        </div>
+        <div id="style-switcher" style="visibility: hidden">
+			<span>
+				<i class="fa fa-cog"></i>
+			</span>
+            <section>
+                <header>
+                    <h6>Style selector</h6>
+                    <hr>
+                </header>
+                <div>
+                    <h6>Layout</h6>
+                    <select>
+                        <option selected="selected">Wide</option>
+                        <option>Boxed</option>
+                    </select>
+                </div>
+                <div>
+                    <h6>Patterns</h6>
+                    <img src="./custom_resources/img/patterns/1.jpg" alt="" data-background="bg1">
+                    <img src="./custom_resources/img/patterns/2.jpg" alt="" data-background="bg2">
+                    <img src="./custom_resources/img/patterns/3.jpg" alt="" data-background="bg3">
+                    <img src="./custom_resources/img/patterns/4.jpg" alt="" data-background="bg4">
+                    <img src="./custom_resources/img/patterns/5.jpg" alt="" data-background="bg5">
+                    <img src="./custom_resources/img/patterns/6.jpg" alt="" data-background="bg6">
+                    <img src="./custom_resources/img/patterns/7.jpg" alt="" data-background="bg7">
+                    <img src="./custom_resources/img/patterns/8.jpg" alt="" data-background="bg8">
+                </div>
+                <div>
+                    <h6>Images</h6>
+                    <img src="./custom_resources/img/styleselector/1.jpg" alt="" data-background="bg9">
+                    <img src="./custom_resources/img/styleselector/2.jpg" alt="" data-background="bg10">
+                    <img src="./custom_resources/img/styleselector/3.jpg" alt="" data-background="bg11">
+                    <img src="./custom_resources/img/styleselector/4.jpg" alt="" data-background="bg12">
+                </div>
+            </section>
         </div>
     </body>
     <script defer src="{{ mix('js/manifest.js') }}"></script>

@@ -39,6 +39,8 @@
             return {
                 articleLatestLists : [],
                 categoryLists : [],
+                ajaxCount : 0,
+                ajaxTotal : 2,
             };
         },
         computed: {},
@@ -49,9 +51,11 @@
                 axios.get('/api/article/latest-list')
                     .then(function (response) {
                         that.articleLatestLists = response.data.data;
+                        that.loadAjaxFinish();
                     })
                     .catch(function (error) {
                         console.log(error);
+                        that.loadAjaxFinish();
                     });
             },
             getCategoryList:function () {
@@ -59,19 +63,26 @@
                 axios.get('/api/category/list')
                     .then(function (response) {
                         that.categoryLists = response.data.data;
+                        that.loadAjaxFinish();
                     })
                     .catch(function (error) {
                         console.log(error);
+                        that.loadAjaxFinish();
                     });
+            },
+            loadAjaxFinish:function () {
+                this.ajaxCount++;
+                if(this.ajaxCount === this.ajaxTotal){
+                    this.$emit('load-layout-finish');
+                }
             }
         },
         created() {
+            this.ajaxCount = 0;
             this.getArticleLatestList();
             this.getCategoryList();
-            console.log('sidebar页面创建!.')
         },
         mounted() {
-            console.log('sidebar页面挂载!.')
         }
     }
 </script>
