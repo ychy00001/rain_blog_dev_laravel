@@ -28,6 +28,7 @@
     import Pagination from './widget/PaginationComponent.vue';
 
     export default {
+        name: "ArticleList",
         data(){
             return {
                 articleLists : {},
@@ -97,6 +98,9 @@
             }
         },
         created() {
+            console.log("ArticleList组件");
+        },
+        mounted() {
             if(!this.$route.params.page){
                 this.currentPage = 1;
             }else{
@@ -108,8 +112,6 @@
                 this.categoryId = parseInt(this.$route.params.category);
             }
             this.getArticleList();
-        },
-        mounted() {
         },
         components: {
             'Pagination': Pagination

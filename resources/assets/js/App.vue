@@ -5,7 +5,9 @@
         <section id="page">
             <div class="container">
                 <div class="row">
-                    <router-view @load-layout-finish="loadLayoutFinish"></router-view>
+                    <keep-alive>
+                        <router-view @load-layout-finish="loadLayoutFinish"></router-view>
+                    </keep-alive>
                     <layout-sidebar @load-layout-finish="loadLayoutFinish"></layout-sidebar>
                 </div>
             </div>

@@ -13,9 +13,8 @@
             </div>
             <div class="widget">
                 <h4>联系方式</h4>
-                <p>WeChat：ychy0001</p>
-                <p>E-mail①：ychy0001@gmail.com</p>
-                <p>E-mail②：ychy0001@163.com</p>
+                <p>E-mail①：ychy00001@gmail.com</p>
+                <p>E-mail②：ychy00001@163.com</p>
             </div>
             <div class="widget">
                 <h4>最新博文</h4>

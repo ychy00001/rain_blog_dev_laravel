@@ -46,6 +46,7 @@
     import CommentTree from './widget/CommentTreeComponent.vue'
 
     export default {
+        name: "Article",
         data(){
             return {
                 articleDetail : {},

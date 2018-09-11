@@ -7,7 +7,7 @@
                         <div id="logo-container">
                             <div class="tb">
                                 <div class="tb-cell">
-                                    <a href="/">
+                                    <a href="/#/index">
                                         <img src="/custom_resources/img/logo.png" class="standard-logo" alt="">
                                     </a>
                                 </div>
