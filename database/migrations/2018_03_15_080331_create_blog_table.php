@@ -54,6 +54,8 @@ class CreateBlogTable extends Migration
         Schema::create('comment', function (Blueprint $table) {
             $table->increments('id')->comment('评论id');
             $table->integer('article_id')->comment('文章id');
+            $table->string('name',64)->defalut("")->comment('评论人名称');
+            $table->string('email',128)->default("")->comment('评论人邮箱');
             $table->integer('pid')->default(0)->comment('父id');
             $table->text('content')->comment('评论内容');
             $table->timestamps();

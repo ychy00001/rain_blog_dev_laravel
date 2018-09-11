@@ -8,26 +8,24 @@
                 </div>
             </div>
             <div class="widget">
-                <h4>About</h4>
+                <h4>关于我</h4>
                 <p> 我是一只程序员！</p>
             </div>
             <div class="widget">
-                <h4>Find me on</h4>
+                <h4>联系方式</h4>
                 <p>WeChat：ychy0001</p>
                 <p>E-mail①：ychy0001@gmail.com</p>
                 <p>E-mail②：ychy0001@163.com</p>
             </div>
             <div class="widget">
-                <h4>Latest Posts</h4>
+                <h4>最新博文</h4>
                 <ul>
                     <li v-for="(artLatest ,index) in articleLatestLists"><a :href="'#/article/' + artLatest.id">{{artLatest.title}}</a></li>
                 </ul>
             </div>
             <div class="widget tagcloud">
-                <h4>Categories</h4>
-                <ul>
-                    <li v-for="(category ,index) in categoryLists"><a :href="'#/article-list?category_id=' + category.id">{{category.class_name}}({{category.article_num}})</a></li>
-                </ul>
+                <h4>分类</h4>
+                <a  v-for="(category ,index) in categoryLists" :href="'#/article-list/1/' + category.id">{{category.class_name}}({{category.article_num}})</a>
             </div>
         </aside>
     </div>

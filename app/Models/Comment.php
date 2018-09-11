@@ -14,7 +14,7 @@ class Comment extends BaseModel
      * @var array
      */
     protected $fillable = [
-        'article_id', 'pid', 'content'
+        'article_id', 'pid', 'content', 'name', 'email'
     ];
 
     /**
@@ -23,4 +23,7 @@ class Comment extends BaseModel
      * @var array
      */
     protected $hidden = [];
+
+    public static $commonColumn = ['id', 'content', 'pid', 'article_id', 'name', 'email'];
+    public static $detailColumn = ['id', 'content', 'pid', 'article_id', 'name', 'email', 'created_at'];
 }

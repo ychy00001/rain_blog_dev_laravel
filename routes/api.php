@@ -30,6 +30,11 @@ Route::prefix('article')->group(function () {
     Route::get('recommend-list', 'Api\ArticleController@articleRecommendList');
     Route::get('latest-list', 'Api\ArticleController@articleLatestList');
     Route::get('detail', 'Api\ArticleController@articleDetail');
+    Route::get('comment', 'Api\ArticleController@articleComment');
+});
+
+Route::prefix('comment')->group(function () {
+    Route::post('add', 'Api\CommentController@add');
 });
 
 Route::prefix('banner')->group(function () {

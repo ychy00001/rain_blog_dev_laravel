@@ -20,6 +20,18 @@ export default new VueRouter({
             path: '/article/:id',
             component: resolve => void(require(['../components/ArticleComponent.vue'], resolve))
             // component: () => import('../components/ArticleComponent.vue')
+        },
+        {
+            name: 'articleList',
+            path: '/article-list/:page/:category',
+            component: resolve => void(require(['../components/ArticleListComponent.vue'], resolve))
+            // component: () => import('../components/ArticleComponent.vue')
+        },
+        {
+            path: '/article-list',
+            redirect: '/article-list/1',
+            component: resolve => void(require(['../components/ArticleListComponent.vue'], resolve))
+            // component: () => import('../components/ArticleComponent.vue')
         }
     ]
 });

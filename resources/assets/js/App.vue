@@ -36,6 +36,7 @@
         methods: {
             loadLayoutFinish:function () {
                 this.loadLayoutCount++;
+                console.log("总页面布局组件:5 -----> 已加载:"+this.loadLayoutCount);
                 if(this.loadLayoutCount === this.loadLayoutTotal){
                     //发送组件加载完成事件
                     let event = document.createEvent("CustomEvent");

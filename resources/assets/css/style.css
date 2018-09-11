@@ -151,6 +151,7 @@ a {
 
 a:hover {
     color: #ff9b9b;
+    cursor:pointer
 }
 
 a:active,a:focus,a:hover {
@@ -695,6 +696,13 @@ img {
     margin: 40px 0 10px!important;
 }
 
+.articleList hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
 .post>header span {
     font-style: italic;
     font-size: 13px;
@@ -809,7 +817,7 @@ img {
     margin-bottom: 100px;
 }
 
-#comments #list-comments li {
+#comments #list-comments > li {
     position: relative;
     margin-bottom: 30px;
 }
@@ -834,6 +842,9 @@ img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
 }
+#comments #list-comments .children > li {
+    position: relative;
+}
 
 #comments #list-comments li .vcard {
     margin-bottom: 15px;
@@ -855,7 +866,7 @@ img {
     font-size: 13px;
 }
 
-#comments #list-comments li .children li {
+#comments #list-comments li .children > li {
     margin-top: 10px;
 }
 
@@ -870,6 +881,16 @@ img {
     -moz-border-radius: 2px;
     color: #787878;
     background-color: #fff;
+}
+
+
+#comments #commentform .replayInfo h5{
+    float: left;
+    padding: 10px 15px;
+}
+
+#comments #commentform .replayInfo button{
+    float: left;
 }
 
 #comments #commentform input {
@@ -1306,4 +1327,14 @@ img {
     #style-switcher {
         display: none;
     }
+}
+
+@media (min-width: 1200px){
+    body .container {
+        max-width: 970px;
+    }
+}
+
+body p{
+    margin-bottom: 8px;
 }

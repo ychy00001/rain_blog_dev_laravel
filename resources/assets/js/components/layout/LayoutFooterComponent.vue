@@ -4,7 +4,7 @@
             <div class="row">
                 <div id="foot-left" class="col-lg-6 col-sm-6">
                     <img src="/custom_resources/img/logo2.png" alt="">
-                    <p>京ICP备17029279号 © Copyright 2017-2018 ychy666.com All rights reserved</p>
+                    <p>京ICP备17029279号 © Copyright 2017-2018</p>
                 </div>
                 <div id="foot-right" class="col-lg-6 col-sm-6">
                 </div>

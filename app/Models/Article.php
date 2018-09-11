@@ -33,7 +33,7 @@ class Article extends BaseModel
      */
     public function category()
     {
-        return $this->hasOne('App\Models\Category','id');
+        return $this->hasOne('App\Models\Category','id','category_id');
     }
 
 }
