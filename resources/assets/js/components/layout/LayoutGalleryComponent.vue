@@ -35,12 +35,12 @@
                 let that = this;
                 axios.get('/api/banner/list')
                     .then(function (response) {
-                        that.bannerLists = response.data.data;
                         that.$nextTick(function(){
                             let event = document.createEvent("CustomEvent");
                             event.initCustomEvent("vue.banner.finish",true,true);
                             document.dispatchEvent(event);
                         });
+                        that.bannerLists = response.data.data;
                         that.loadAjaxFinish();
                     })
                     .catch(function (error) {
