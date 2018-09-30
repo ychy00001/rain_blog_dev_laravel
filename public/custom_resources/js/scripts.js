@@ -31,6 +31,8 @@
             jQuery('#style-switcher').css('visibility','visible');
             jQuery('body').css('overflow',"scroll");
 
+            //加载轮播图
+            owlInit();
             /* ============== MENU ============== */
             jQuery('.sticky').sticky({topSpacing:0});
             jQuery('#menu-container nav > ul > li').each(function() {
@@ -97,7 +99,7 @@
 		/* ============== FEATURED ============== */
         document.addEventListener("vue.banner.finish",function(){
             //banner数据加载完毕
-            owlInit();
+            // owlInit();
         });
 
 		/* ============== SLIDESHOW IMAGES ============== */

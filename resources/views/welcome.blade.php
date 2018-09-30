@@ -56,6 +56,6 @@
     <script defer src="{{ mix('js/manifest.js') }}"></script>
     <script defer src="{{ mix('js/vendor.js') }}"></script>
     <script defer src="{{ mix('js/app.js') }}"></script>
-    <script defer src="/custom_resources/js/plugins.js?v=111"></script>
-    <script defer src="/custom_resources/js/scripts.js?v=111"></script>
+    <script defer src="/custom_resources/js/plugins.js?v=2018"></script>
+    <script defer src="/custom_resources/js/scripts.js?v=2018"></script>
 </html>
