@@ -30,59 +30,8 @@
             jQuery('#preloader').fadeOut(300);
             jQuery('#style-switcher').css('visibility','visible');
             jQuery('body').css('overflow',"scroll");
-        });
-        // jQuery(window).on("load",function() {
-			// jQuery('#preloader').fadeOut(300);
-        // });
 
-		
-		
-		/* ============== FEATURED ============== */
-        document.addEventListener("vue.banner.finish",function(){
-            //banner数据加载完毕
-            owlInit();
-        });
-
-		/* ============== SLIDESHOW IMAGES ============== */
-		if(jQuery('.house-slideshow').length) {
-			jQuery('.house-slideshow').each(function() {
-				jQuery('ul', this).responsiveSlides({
-					auto: true,             // Boolean: Animate automatically, true or false
-					pager: false,           // Boolean: Show pager, true or false
-					nav: true,             // Boolean: Show navigation, true or false
-					prevText: "<i class='fa fa-chevron-left'></i>",   // String: Text for the "previous" button
-					nextText: "<i class='fa fa-chevron-right'></i>",       // String: Text for the "next" button
-				});
-			});
-		}
-		
-		
-		
-		/* ============== VIDEO SCALE ============== */
-		jQuery('.fit').fitVids();
-		
-		
-		
-		/* ============== MASONRY ============== */
-		var masonry_2col = jQuery('#masonry-1');
-			masonry_2col.isotope({
-			itemSelector: '.post'
-		});
-		
-		var masonry_3col = jQuery('#masonry-2');
-			masonry_3col.isotope({
-			itemSelector: '.post'
-		});
-		
-		jQuery(window).on("load",function() {
-			masonry_2col.isotope('layout');
-			masonry_3col.isotope('layout');
-		});
-		
-		
-		
-		/* ============== MENU ============== */
-		jQuery('#menu-container').bind("DOMNodeInserted",function () {
+            /* ============== MENU ============== */
             jQuery('.sticky').sticky({topSpacing:0});
             jQuery('#menu-container nav > ul > li').each(function() {
                 if(jQuery('.ubermenu-submenu' , this).length > 0) jQuery(this).css('position', 'static');
@@ -118,9 +67,17 @@
             jQuery('#menu-container a').click(function() {
                 if(jQuery(window).width() < 991) {
                     var list = jQuery(this).parent();
+                    console.log(list);
+                    console.log("aaa");
                     if(jQuery('.sub-menu, .ubermenu-tab-content-panel', list).length > 0) {
-                        if(!list.hasClass('menu-open')) jQuery(list).addClass('menu-open');
-                        else jQuery(list).removeClass('menu-open');
+                        console.log("bbb");
+                        if(!list.hasClass('menu-open')){
+                            console.log("open");
+                            jQuery(list).addClass('menu-open');
+                        } else {
+                            console.log("close");
+                            jQuery(list).removeClass('menu-open');
+                        }
                         return false;
                     }
                     if(jQuery('.ubermenu-submenu', list).length > 0) {
@@ -131,6 +88,53 @@
                 }
             });
         });
+        // jQuery(window).on("load",function() {
+			// jQuery('#preloader').fadeOut(300);
+        // });
+
+		
+		
+		/* ============== FEATURED ============== */
+        document.addEventListener("vue.banner.finish",function(){
+            //banner数据加载完毕
+            owlInit();
+        });
+
+		/* ============== SLIDESHOW IMAGES ============== */
+		if(jQuery('.house-slideshow').length) {
+			jQuery('.house-slideshow').each(function() {
+				jQuery('ul', this).responsiveSlides({
+					auto: true,             // Boolean: Animate automatically, true or false
+					pager: false,           // Boolean: Show pager, true or false
+					nav: true,             // Boolean: Show navigation, true or false
+					prevText: "<i class='fa fa-chevron-left'></i>",   // String: Text for the "previous" button
+					nextText: "<i class='fa fa-chevron-right'></i>",       // String: Text for the "next" button
+				});
+			});
+		}
+
+
+		/* ============== VIDEO SCALE ============== */
+		jQuery('.fit').fitVids();
+		
+		
+		
+		/* ============== MASONRY ============== */
+		var masonry_2col = jQuery('#masonry-1');
+			masonry_2col.isotope({
+			itemSelector: '.post'
+		});
+		
+		var masonry_3col = jQuery('#masonry-2');
+			masonry_3col.isotope({
+			itemSelector: '.post'
+		});
+		
+		jQuery(window).on("load",function() {
+			masonry_2col.isotope('layout');
+			masonry_3col.isotope('layout');
+		});
+
 
         /* ============== FORM VALIDATE ============== */
         var personal = jQuery('input[name="personal"]');

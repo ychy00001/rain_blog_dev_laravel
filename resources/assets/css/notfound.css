@@ -1,0 +1,33 @@
+.not_found {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.not_found .wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.not_found .logo {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.not_found p a {
+    color: #eee;
+    font-size: 13px;
+    padding: 5px;
+    background: rgb(3,174,239);
+    text-decoration: none;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+}
+
+.not_found p a:hover {
+    color: #fff;
+}

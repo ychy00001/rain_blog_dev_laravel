@@ -28,5 +28,14 @@ export default new VueRouter({
             component: resolve => void(require(['../components/ArticleListComponent.vue'], resolve))
             // component: () => import('../components/ArticleComponent.vue')
         },
+        {
+            name: '404',
+            path: '/404',
+            component: resolve => void(require(['../components/NotFoundComponent.vue'], resolve))
+        },
+        {
+            path: '*',    // 此处需特别注意至于最底部
+            redirect: '/404'
+        }
     ]
 });

@@ -62,6 +62,15 @@
             },
 
         },
+        watch: {
+            '$route' (to, from) {
+                if ("index" === to.name) {
+                    this.ajaxCount = 0;
+                    this.ajaxTotal = 1;
+                    this.getArticleRecommendList();
+                }
+            }
+        },
         created() {
             this.ajaxCount = 0;
             this.getArticleRecommendList();

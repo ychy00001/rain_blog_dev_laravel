@@ -1,5 +1,5 @@
 <template>
-    <div class="col-lg-8 col-sm-8 column loading_layout">
+    <div class="loading_layout">
         <img class="loading_img" src="/custom_resources/img/page_loading.gif" alt="页面加载loading图">
     </div>
 </template>
