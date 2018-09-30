@@ -1,31 +1,35 @@
 <template>
     <div class="col-lg-8 col-sm-8 column articleList">
-        <header id="header-section">
-            <h3>文章列表</h3>
-            <div></div>
-            <span>分类：{{categoryName}}</span>
-        </header>
-        <ul>
-            <li v-for="(list ,index) in articleLists">
-                <p>
-                    <a :href="'#/article/' + list.id">{{list.title}}</a>
-                </p>
-                <footer>
-                    <hr>
-                </footer>
-            </li>
-        </ul>
-        <pagination
-                :page-index="currentPage"
-                :totla="count"
-                :page-size="pageSize"
-                @change="pageChange">
-        </pagination>
+        <page-loading v-if="ajaxCount != ajaxTotal"></page-loading>
+        <div v-else>
+            <header id="header-section">
+                <h3>文章列表</h3>
+                <div></div>
+                <span>分类：{{categoryName}}</span>
+            </header>
+            <ul>
+                <li v-for="(list ,index) in articleLists">
+                    <p>
+                        <a :href="'#/article/' + list.id">{{list.title}}</a>
+                    </p>
+                    <footer>
+                        <hr>
+                    </footer>
+                </li>
+            </ul>
+            <pagination
+                    :page-index="currentPage"
+                    :totla="count"
+                    :page-size="pageSize"
+                    @change="pageChange">
+            </pagination>
+        </div>
     </div>
 </template>
 
 <script>
     import Pagination from './widget/PaginationComponent.vue';
+    import PageLoading from './widget/LoadingComponent.vue'
 
     export default {
         name: "ArticleList",
@@ -84,17 +88,21 @@
         },
         watch: {
             '$route' (to, from) {
-                if(!to.params.page){
-                    this.currentPage = 1;
-                }else{
-                    this.currentPage = parseInt(to.params.page);
+                if ("articleList" === to.name) {
+                    this.ajaxCount = 0;
+                    this.ajaxTotal = 1;
+                    if(!to.params.page){
+                        this.currentPage = 1;
+                    }else{
+                        this.currentPage = parseInt(to.params.page);
+                    }
+                    if(!to.params.category){
+                        this.categoryId = 0;
+                    }else{
+                        this.categoryId = parseInt(to.params.category);
+                    }
+                    this.getArticleList();
                 }
-                if(!to.params.category){
-                    this.categoryId = 0;
-                }else{
-                    this.categoryId = parseInt(to.params.category);
-                }
-                this.getArticleList();
             }
         },
         created() {
@@ -114,7 +122,8 @@
             this.getArticleList();
         },
         components: {
-            'Pagination': Pagination
+            'Pagination': Pagination,
+            'PageLoading': PageLoading
         }
     }
 </script>

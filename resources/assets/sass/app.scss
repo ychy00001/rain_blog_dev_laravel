@@ -1,10 +1,7 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -35,7 +32,7 @@
       color: #787878;
     }
     &.paging-item--disabled,
-    &.paging-item--more{
+    &.paging-item--more {
       background-color: #fff;
       color: #505050;
     }
@@ -51,10 +48,24 @@
     //选中
     &.paging-item--current {
       background-color: #787878;
-      color:#fff;
+      color: #fff;
       position: relative;
       z-index: 1;
       border-color: #787878;
     }
   }
+}
+
+.loading_layout {
+  position: relative;
+  height: 70%;
+}
+
+.loading_layout .loading_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
