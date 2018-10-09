@@ -41,9 +41,16 @@
                 console.log("总页面布局组件:5 -----> 已加载:"+this.loadLayoutCount);
                 if(this.loadLayoutCount === this.loadLayoutTotal){
                     //发送组件加载完成事件
-                    let event = document.createEvent("CustomEvent");
-                    event.initCustomEvent("vue.component.finish",true,true);
-                    document.dispatchEvent(event);
+                    if (document.createEventObject) {
+                        // IE浏览器支持fireEvent方法
+                        let evt = document.createEventObject();
+                        document.fireEvent("vue.component.finish", evt)
+                    } else {
+                        // 其他标准浏览器使用dispatchEvent方法
+                        let evt = document.createEvent('CustomEvent');
+                        evt.initEvent("vue.component.finish", true, true);
+                        !document.dispatchEvent(evt);
+                    }
                 }
             }
         },
@@ -55,6 +62,7 @@
     }
 </script>
 <style>
+    @import "../css/bootstrap.css";
     @import "../css/font-Alike.css";
     @import "../css/font-awesome.min.css";
     /*@import "../css/font-Playfair.css";*/

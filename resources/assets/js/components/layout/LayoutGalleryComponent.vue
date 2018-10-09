@@ -37,9 +37,16 @@
                     .then(function (response) {
                         that.bannerLists = response.data.data;
                         that.$nextTick(function(){
-                            let event = document.createEvent("CustomEvent");
-                            event.initCustomEvent("vue.banner.finish",true,true);
-                            document.dispatchEvent(event);
+                            if (document.createEventObject) {
+                                // IE浏览器支持fireEvent方法
+                                let evt = document.createEventObject();
+                                document.fireEvent("vue.banner.finish", evt)
+                            } else {
+                                // 其他标准浏览器使用dispatchEvent方法
+                                let evt = document.createEvent('CustomEvent');
+                                evt.initEvent("vue.banner.finish", true, true);
+                                !document.dispatchEvent(evt);
+                            }
                             console.log("Banner数据加载完成!发送js事件");
                         });
                         that.loadAjaxFinish();

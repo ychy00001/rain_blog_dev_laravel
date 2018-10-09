@@ -24,7 +24,13 @@ export default new VueRouter({
         },
         {
             name: 'articleList',
-            path: '/article-list/:page?/:category?',
+            path: '/article-list/:category?/:page?',
+            component: resolve => void(require(['../components/ArticleListComponent.vue'], resolve))
+            // component: () => import('../components/ArticleComponent.vue')
+        },
+        {
+            name: 'articleSearch',
+            path: '/article-search/:search?/:page?',
             component: resolve => void(require(['../components/ArticleListComponent.vue'], resolve))
             // component: () => import('../components/ArticleComponent.vue')
         },

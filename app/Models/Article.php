@@ -6,6 +6,8 @@ use App\Models\Base\BaseModel;
 
 class Article extends BaseModel
 {
+    public static $pageLimit = 10;
+    public static $latestLimit = 4;
     protected $table = 'article';
     public static $commonColumn = ["id","category_id","title","subtitle","order","comment_count","release_at","cover","user_id"];
     public static $detailColumn = ["id","category_id","title","subtitle","content","order","comment_count","created_at","updated_at","release_at","cover","user_id"];

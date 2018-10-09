@@ -31,6 +31,7 @@ Route::prefix('article')->group(function () {
     Route::get('latest-list', 'Api\ArticleController@articleLatestList');
     Route::get('detail', 'Api\ArticleController@articleDetail');
     Route::get('comment', 'Api\ArticleController@articleComment');
+    Route::get('search', 'Api\ArticleController@articleSearch');
 });
 
 Route::prefix('comment')->group(function () {

@@ -27,7 +27,7 @@ class ArticleLogic
      */
     public static function getArticleRecommendList()
     {
-        $allArticle = with(new Article())->with("category")->orderBy('order', "desc")->orderBy('release_at', "desc")->limit(4)->get();
+        $allArticle = with(new Article())->with("category")->orderBy('order', "desc")->orderBy('release_at', "desc")->limit(Article::$latestLimit)->get();
         if (!empty($allArticle)) {
             $allArticle = $allArticle->toArray();
             foreach ($allArticle as $key => $value) {
@@ -48,7 +48,7 @@ class ArticleLogic
      */
     public static function getArticleLatestList()
     {
-        $allArticle = with(new Article())->select(Article::$commonColumn)->with("category")->orderBy('release_at', "desc")->limit(4)->get();
+        $allArticle = with(new Article())->select(Article::$commonColumn)->with("category")->orderBy('release_at', "desc")->limit(Article::$latestLimit)->get();
         if (!empty($allArticle)) {
             $allArticle = $allArticle->toArray();
         }
@@ -70,22 +70,56 @@ class ArticleLogic
         if (empty($categoryId)) {
             $category = [];
         } else {
-            $category = CategoryLogic::findOneCategory($categoryId,['id','class_name']);
+            $category = CategoryLogic::findOneCategory($categoryId, ['id', 'class_name']);
         }
 
         $query = with(new Article())->select(Article::$commonColumn)
             ->with("category");
-        if(!empty($category)){
+        if (!empty($category)) {
             $query = $query->where("category_id", '=', $category['id']);
         }
-        $allArticle = $query->orderBy('order', "desc")->orderBy('release_at', "desc")->limit(4)->paginate(10);
+        $allArticle = $query->orderBy('order', "desc")->orderBy('release_at', "desc")->paginate(Article::$pageLimit);
         if (!empty($allArticle)) {
             $allArticle = $allArticle->toArray();
         }
 
-        if(!empty($category)){
+        if (!empty($category)) {
             $allArticle['category_name'] = $category['class_name'];
-        }else{
+        } else {
+            $allArticle['category_name'] = "";
+        }
+        return $allArticle;
+    }
+
+    /**
+     * 获取文章分页列表数据
+     *
+     * @author Rain
+     * @date   2018/8/1 下午4:51
+     *
+     * @param string $search 查询信息
+     *
+     * @return array
+     */
+    public static function searchArticleList($search = null)
+    {
+        $query = with(new Article())->select(Article::$commonColumn)
+            ->with("category");
+
+        if ($search !== null) {
+            $query = $query->where("title", "like", "%$search%");
+            $query = $query->orWhere("content", "like", "%$search%");
+        }
+
+        $allArticle = $query->orderBy('order', "desc")->orderBy('release_at', "desc")->paginate(Article::$pageLimit);
+
+        if (!empty($allArticle)) {
+            $allArticle = $allArticle->toArray();
+        }
+
+        if (!empty($category)) {
+            $allArticle['category_name'] = $category['class_name'];
+        } else {
             $allArticle['category_name'] = "";
         }
         return $allArticle;

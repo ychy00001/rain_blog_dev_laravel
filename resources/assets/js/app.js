@@ -11,7 +11,7 @@ window.Vue = require('vue');
 
 // import ElementUI from 'element-ui'
 // Vue.use(ElementUI);
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App.vue'
 import router from './router/index.js'
 
