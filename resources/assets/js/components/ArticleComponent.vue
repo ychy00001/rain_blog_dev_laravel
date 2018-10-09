@@ -146,7 +146,7 @@
             },
         },
         watch: {
-            '$route': function (to, from) {
+            '$route' (to, from) {
                 if ("article" === to.name) {
                     this.ajaxCount = 0;
                     this.ajaxTotal = 2;
@@ -158,10 +158,10 @@
         },
         created() {
             this.articleId = this.$route.params.id;
-            this.getArticleDetail();
-            this.getArticleComment();
         },
         mounted() {
+            this.getArticleDetail();
+            this.getArticleComment();
         },
         components: {
             'CommentTree': CommentTree,
