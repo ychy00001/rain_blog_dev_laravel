@@ -937,17 +937,18 @@ img {
     position: relative;
 }
 
-.widget .search-form input {
+.widget form .search-form input {
     border: none;
     color: #787878;
     width: 88%;
     position: relative;
-    top: 1px;
+    top: 2px;
     font-size: 13px;
     float: left;
     letter-spacing: 1px;
-    height: 19px;
-    outline:medium;
+    height: 19px !important;
+    line-height: normal;
+    outline:none;
 }
 
 .widget .search-form button {

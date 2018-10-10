@@ -302,7 +302,7 @@ function owlInit() {
     let dom = jQuery('#featured');
     dom.owlCarousel({
         dots :false,
-        nav : true,
+        nav : false,
         responsive:{
             0:{
                 items:1
