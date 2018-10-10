@@ -25,8 +25,29 @@
 		
 		
 		/* ============== PRELOADER ============== */
+		var EventUtil = {
+            addHandler : function(element,type,handler){
+                if(element.addEventListener){
+                    element.addEventListener(type,handler,false);
+                }else if(element.attachEvent){
+                    element.attachEvent('on' + type,handler);
+                }else{
+                    element['on' + type] = handler;
+                }
+            },
+            removeHandler : function(element,type,handler){
+                if(element.removeEventListener){
+                    element.removeEventListener(type,handler,false);
+                }else if(element.detachEvent){
+                    element.detachEvent('on' + type,handler);
+                }else{
+                    element['on' + type] = null;
+                }
+            }
+        };
+
 		// 所有组件加载完毕后执行
-        document.addEventListener("vue.component.finish",function(){
+        var handler = function () {
             jQuery('#preloader').fadeOut(300);
             jQuery('#app').css("visibility","show");
             jQuery('#style-switcher').css('visibility','visible');
@@ -90,13 +111,14 @@
                     }
                 }
             });
-        });
+        };
+        EventUtil.addHandler(document,'vue.component.finish',handler);
         // jQuery(window).on("load",function() {
 			// jQuery('#preloader').fadeOut(300);
         // });
 
-		
-		
+
+
 		/* ============== FEATURED ============== */
         document.addEventListener("vue.banner.finish",function(){
             //banner数据加载完毕
@@ -119,20 +141,20 @@
 
 		/* ============== VIDEO SCALE ============== */
 		jQuery('.fit').fitVids();
-		
-		
-		
+
+
+
 		/* ============== MASONRY ============== */
 		var masonry_2col = jQuery('#masonry-1');
 			masonry_2col.isotope({
 			itemSelector: '.post'
 		});
-		
+
 		var masonry_3col = jQuery('#masonry-2');
 			masonry_3col.isotope({
 			itemSelector: '.post'
 		});
-		
+
 		jQuery(window).on("load",function() {
 			masonry_2col.isotope('layout');
 			masonry_3col.isotope('layout');
@@ -188,7 +210,7 @@
             // Success validate
             if (errors == 0) {
                 jQuery('#contactform button[type="submit"], #contactform input').attr('disabled', 'disabled');
-				
+
 				jQuery('#contactform .loading').slideDown(300);
                 $.ajax({
                     type: "POST",
