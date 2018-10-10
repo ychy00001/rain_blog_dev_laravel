@@ -301,13 +301,27 @@
 function owlInit() {
     let dom = jQuery('#featured');
     dom.owlCarousel({
-        items : 4,
         dots :false,
-        nav : false,
+        nav : true,
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            770:{
+                items:3
+            },
+            980:{
+                items:4
+            }
+        },
         loop : true,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
+        lazyLoad: true,
         smartSpeed: 700,
         margin:5,
     });
