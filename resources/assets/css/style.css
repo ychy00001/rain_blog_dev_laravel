@@ -1353,3 +1353,7 @@ img {
 body p{
     margin-bottom: 8px;
 }
+
+#preloader {
+    float: left;
+}

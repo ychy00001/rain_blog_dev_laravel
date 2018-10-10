@@ -14,7 +14,7 @@
     </head>
     <body class="bg9" style="overflow: hidden">
         <div id="preloader"></div>
-        <div id="app">
+        <div id="app" style="visibility: hidden">
         </div>
         <div id="style-switcher" style="visibility: hidden">
 			<span>

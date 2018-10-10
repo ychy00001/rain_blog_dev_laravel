@@ -28,6 +28,7 @@
 		// 所有组件加载完毕后执行
         document.addEventListener("vue.component.finish",function(){
             jQuery('#preloader').fadeOut(300);
+            jQuery('#app').css("visibility","show");
             jQuery('#style-switcher').css('visibility','visible');
             jQuery('body').css('overflow',"scroll");
 
