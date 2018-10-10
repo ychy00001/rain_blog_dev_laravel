@@ -21,7 +21,7 @@
                     <hr>
                 </footer>
             </article>
-            <nav id="post-nav">
+            <nav id="post-nav" v-if="articleRecommendLists != []">
                 <a href="#/article-list">更多文章 »</a>
             </nav>
         </div>
