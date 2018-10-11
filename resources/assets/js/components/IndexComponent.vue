@@ -4,8 +4,10 @@
         <div v-else>
             <article class="post" v-for="(artRecList ,index) in articleRecommendLists">
                 <header>
-                    <div class="media">
-                        <a v-if="artRecList.cover != undefined || artRecList.cover != ''" :href="'#/article/' + artRecList.id"><img :src="'upload/'+artRecList.cover" alt="" ></a>
+                    <div v-if="artRecList.cover" class="media">
+                        <a :href="'#/article/' + artRecList.id">
+                            <img :src="'upload/'+artRecList.cover" alt="" >
+                        </a>
                     </div>
                     <h3>
                         <a :href="'#/article/' + artRecList.id">{{artRecList.title}}</a>
