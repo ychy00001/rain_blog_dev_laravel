@@ -49,7 +49,7 @@
                         // 其他标准浏览器使用dispatchEvent方法
                         let evt = document.createEvent('CustomEvent');
                         evt.initEvent("vue.component.finish", true, true);
-                        !document.dispatchEvent(evt);
+                        document.dispatchEvent(evt);
                     }
                 }
             }

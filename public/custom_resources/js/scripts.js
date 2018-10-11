@@ -29,7 +29,7 @@
         $.cookie('bg', "bg9", { expires: 1 });
 		
 		/* ============== PRELOADER ============== */
-		var EventUtil = {
+		let EventUtil = {
             addHandler : function(element,type,handler){
                 if(element.addEventListener){
                     element.addEventListener(type,handler,false);
